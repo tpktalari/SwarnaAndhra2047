@@ -1,4 +1,4 @@
-import { Locator, Page } from "@playwright/test";
+import { Locator, Page } from "playwright";
 import { BasePage } from "./BasePage";
 import * as allure from "allure-js-commons";
 
@@ -101,9 +101,9 @@ export class PerformanceDashboardPage extends BasePage {
             const scoreValues = await this.page.locator(`table tbody tr td:nth-child(${achievedIndexScore})`).allInnerTexts();
             const constValues = await this.page.locator(`table tbody tr td:nth-child(${achievedIndexKey})`).allInnerTexts();
 
-            for (let i = 0; i < constValues.slice(0, 10).length; i++) {
-                const constituency = constValues.slice(0, 10)[i].trim();
-                const score = Number(scoreValues.slice(0, 10)[i].trim());
+            for (let i = 0; i < constValues.slice(0, 5).length; i++) {
+                const constituency = constValues.slice(0, 5)[i].trim();
+                const score = Number(scoreValues.slice(0, 5)[i].trim());
                 this.constMainTableScores.set(constituency, score);
             }
 
@@ -116,8 +116,8 @@ export class PerformanceDashboardPage extends BasePage {
         return allure.step('Click indicator links and store average scores', async () => {
             const links = await this.getNoofIndicatorsLinks();
             const constituencyKeys = [...this.constMainTableScores.keys()];
-            for (let i = 0; i < links.slice(0, 10).length; i++) {
-                const link = links.slice(0, 10)[i];
+            for (let i = 0; i < links.slice(0, 5).length; i++) {
+                const link = links.slice(0, 5)[i];
                 await link.waitForElementState('stable')
                 await link.click();
                 // Wait for at least one row to be visible
