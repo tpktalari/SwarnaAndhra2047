@@ -12,7 +12,7 @@ test.beforeEach(async ({ loginPage, homePage, swaKpisHomePage, page }) => {
 
 })
 
-test('Verify key performance dashboard constituency stats scores with main scores', async ({ swaKpisHomePage, performanceDashboardPage }) => {
+test.only('Verify key performance dashboard constituency stats scores with main scores', async ({ swaKpisHomePage, performanceDashboardPage }) => {
     test.setTimeout(840000)
 
     await allure.displayName("Performance Dashboard - Constituency Score Validation");
