@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Validates that Constituency main scores match indicator averages","43415","Performance Dashboard - Constituency Score Validation","chromium","2026-09-01","failed","2026-09-01","","admin\dashboards_tests.spec.ts","",""

@@ -1,0 +1,3101 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: admin\dashboards_tests.spec.ts >> Verify key performance dashboard constituency stats scores with main scores
+- Location: tests\admin\dashboards_tests.spec.ts:15:6
+
+# Error details
+
+```
+Error: Score for Constituency "Amadalavalasa": Expected 81, Got 80
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 80
+Received: 81
+```
+
+```
+Error: Score for Constituency "Etcherla": Expected 83, Got 82
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 82
+Received: 83
+```
+
+```
+Error: Score for Constituency "Ichchapuram": Expected 74, Got 73
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 73
+Received: 74
+```
+
+```
+Error: Score for Constituency "Narasannapeta": Expected 79, Got 78
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 78
+Received: 79
+```
+
+```
+Error: Score for Constituency "Palasa": Expected 72, Got 71
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: 71
+Received: 72
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e8]:
+        - img [ref=e10]
+        - generic [ref=e13]:
+          - button "WELCOME:Admin, cfss_admin" [ref=e15] [cursor=pointer]:
+            - generic [ref=e16]:
+              - text: "WELCOME:"
+              - generic [ref=e17]:
+                - text: Admin,
+                - generic [ref=e18]: cfss_admin
+          - button "39:38 Session Time" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 39:38
+            - paragraph [ref=e21]: Session Time
+          - button "Logout" [ref=e22] [cursor=pointer]:
+            - button "Logout" [ref=e23]:
+              - text: Logout
+              - img [ref=e24]
+      - navigation [ref=e26]:
+        - generic [ref=e27]:
+          - link "Home" [ref=e29] [cursor=pointer]:
+            - /url: /Menubar
+            - img [ref=e30]
+            - text: Home
+          - button "Services" [ref=e35] [cursor=pointer]:
+            - img [ref=e36]
+            - text: Services
+          - button "Reports" [ref=e41] [cursor=pointer]:
+            - img [ref=e42]
+            - text: Reports
+          - button "Security" [ref=e46] [cursor=pointer]:
+            - img [ref=e47]
+            - text: Security
+          - button "Dashboard" [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+            - text: Dashboard
+          - link "Change Password" [ref=e57] [cursor=pointer]:
+            - /url: /ChangePassword
+            - img [ref=e58]
+            - text: Change Password
+          - button "GSDP Reports" [ref=e62] [cursor=pointer]
+          - button "MER" [ref=e65] [cursor=pointer]
+        - button "switch module" [ref=e68] [cursor=pointer]:
+          - img [ref=e69]
+          - text: switch module
+    - paragraph [ref=e73]: © Copy Rights 2025 APCFSS. All Rights Reserved.
+    - generic [ref=e74]:
+      - generic [ref=e76]:
+        - heading "Performance Dashboard" [level=2] [ref=e77]
+        - heading "Scores – Generated upto July Month" [level=3] [ref=e78]:
+          - img [ref=e79]
+          - heading "Scores – Generated upto July Month" [level=6] [ref=e81]
+      - generic [ref=e84]:
+        - generic [ref=e86]:
+          - heading "Aspirant (C) <50%" [level=5] [ref=e90]
+          - heading "Performer (B) 50% – 74%" [level=5] [ref=e94]
+          - heading "Front Runner (A) 75% – 89%" [level=5] [ref=e98]
+          - heading "Achiever (A+) 90% – 100%" [level=5] [ref=e102]
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - generic [ref=e108]: Score-Cat *
+            - combobox [ref=e109]:
+              - option "Monthly" [selected]
+              - option "Provisional"
+              - option "Annual"
+          - generic [ref=e110]:
+            - generic [ref=e111]: Year *
+            - combobox [ref=e112]:
+              - option "--select--"
+              - option "2025-26"
+              - option "2026-27" [selected]
+          - generic [ref=e113]:
+            - generic [ref=e114]: Month *
+            - combobox [ref=e115]:
+              - option "April"
+              - option "May"
+              - option "June"
+              - option "July" [selected]
+          - generic [ref=e116]:
+            - generic [ref=e117]: Search
+            - textbox "Search Department..." [ref=e118]
+        - generic [ref=e124]:
+          - heading "22 SECRETARIAT DEPARTMENTS" [level=6] [ref=e126]
+          - generic [ref=e130]:
+            - button "AGCS 72 B" [ref=e132] [cursor=pointer]:
+              - heading "AGCS" [level=5] [ref=e134]
+              - generic [ref=e135]:
+                - paragraph [ref=e137]: "72"
+                - paragraph [ref=e140]: B
+            - button "AHFS 88 A" [ref=e142] [cursor=pointer]:
+              - heading "AHFS" [level=5] [ref=e144]
+              - generic [ref=e145]:
+                - paragraph [ref=e147]: "88"
+                - paragraph [ref=e150]: A
+            - button "EFSS 76 A" [ref=e152] [cursor=pointer]:
+              - heading "EFSS" [level=5] [ref=e154]
+              - generic [ref=e155]:
+                - paragraph [ref=e157]: "76"
+                - paragraph [ref=e160]: A
+            - button "ENES 92 A+" [ref=e162] [cursor=pointer]:
+              - heading "ENES" [level=5] [ref=e164]
+              - generic [ref=e165]:
+                - paragraph [ref=e167]: "92"
+                - paragraph [ref=e170]: A+
+            - button "FCSS 96 A+" [ref=e172] [cursor=pointer]:
+              - heading "FCSS" [level=5] [ref=e174]
+              - generic [ref=e175]:
+                - paragraph [ref=e177]: "96"
+                - paragraph [ref=e180]: A+
+            - button "FINS 97 A+" [ref=e182] [cursor=pointer]:
+              - heading "FINS" [level=5] [ref=e184]
+              - generic [ref=e185]:
+                - paragraph [ref=e187]: "97"
+                - paragraph [ref=e190]: A+
+            - button "HMFS 97 A+" [ref=e192] [cursor=pointer]:
+              - heading "HMFS" [level=5] [ref=e194]
+              - generic [ref=e195]:
+                - paragraph [ref=e197]: "97"
+                - paragraph [ref=e200]: A+
+            - button "HOMS 94 A+" [ref=e202] [cursor=pointer]:
+              - heading "HOMS" [level=5] [ref=e204]
+              - generic [ref=e205]:
+                - paragraph [ref=e207]: "94"
+                - paragraph [ref=e210]: A+
+            - button "HOUS 22 C" [ref=e212] [cursor=pointer]:
+              - heading "HOUS" [level=5] [ref=e214]
+              - generic [ref=e215]:
+                - paragraph [ref=e217]: "22"
+                - paragraph [ref=e220]: C
+            - button "WRDS 80 A" [ref=e222] [cursor=pointer]:
+              - heading "WRDS" [level=5] [ref=e224]
+              - generic [ref=e225]:
+                - paragraph [ref=e227]: "80"
+                - paragraph [ref=e230]: A
+            - button "INCS 81 A" [ref=e232] [cursor=pointer]:
+              - heading "INCS" [level=5] [ref=e234]
+              - generic [ref=e235]:
+                - paragraph [ref=e237]: "81"
+                - paragraph [ref=e240]: A
+            - button "IIS 85 A" [ref=e242] [cursor=pointer]:
+              - heading "IIS" [level=5] [ref=e244]
+              - generic [ref=e245]:
+                - paragraph [ref=e247]: "85"
+                - paragraph [ref=e250]: A
+            - button "ITCS 100 A+" [ref=e252] [cursor=pointer]:
+              - heading "ITCS" [level=5] [ref=e254]
+              - generic [ref=e255]:
+                - paragraph [ref=e257]: "100"
+                - paragraph [ref=e260]: A+
+            - button "LAES 100 A+" [ref=e262] [cursor=pointer]:
+              - heading "LAES" [level=5] [ref=e264]
+              - generic [ref=e265]:
+                - paragraph [ref=e267]: "100"
+                - paragraph [ref=e270]: A+
+            - button "MAUS 85 A" [ref=e272] [cursor=pointer]:
+              - heading "MAUS" [level=5] [ref=e274]
+              - generic [ref=e275]:
+                - paragraph [ref=e277]: "85"
+                - paragraph [ref=e280]: A
+            - button "PRRS 89 A" [ref=e282] [cursor=pointer]:
+              - heading "PRRS" [level=5] [ref=e284]
+              - generic [ref=e285]:
+                - paragraph [ref=e287]: "89"
+                - paragraph [ref=e290]: A
+            - button "REVS 93 A+" [ref=e292] [cursor=pointer]:
+              - heading "REVS" [level=5] [ref=e294]
+              - generic [ref=e295]:
+                - paragraph [ref=e297]: "93"
+                - paragraph [ref=e300]: A+
+            - button "SEIS 98 A+" [ref=e302] [cursor=pointer]:
+              - heading "SEIS" [level=5] [ref=e304]
+              - generic [ref=e305]:
+                - paragraph [ref=e307]: "98"
+                - paragraph [ref=e310]: A+
+            - button "SOWS 78 A" [ref=e312] [cursor=pointer]:
+              - heading "SOWS" [level=5] [ref=e314]
+              - generic [ref=e315]:
+                - paragraph [ref=e317]: "78"
+                - paragraph [ref=e320]: A
+            - button "TRBS 83 A" [ref=e322] [cursor=pointer]:
+              - heading "TRBS" [level=5] [ref=e324]
+              - generic [ref=e325]:
+                - paragraph [ref=e327]: "83"
+                - paragraph [ref=e330]: A
+            - button "WDCS 91 A+" [ref=e332] [cursor=pointer]:
+              - heading "WDCS" [level=5] [ref=e334]
+              - generic [ref=e335]:
+                - paragraph [ref=e337]: "91"
+                - paragraph [ref=e340]: A+
+            - button "YTCS 0 C" [ref=e342] [cursor=pointer]:
+              - heading "YTCS" [level=5] [ref=e344]
+              - generic [ref=e345]:
+                - paragraph [ref=e347]: "0"
+                - paragraph [ref=e350]: C
+        - separator [ref=e351]
+        - generic [ref=e352]:
+          - tablist [ref=e354]:
+            - tab [ref=e356] [cursor=pointer]:
+              - img [ref=e357]
+            - tab [ref=e359] [cursor=pointer]:
+              - img [ref=e360]
+            - tab [ref=e362] [cursor=pointer]:
+              - img [ref=e363]
+            - tab "Constituency Stats" [ref=e365] [cursor=pointer]:
+              - img [ref=e366]
+              - generic [ref=e367]: Constituency Stats
+            - tab [ref=e369] [cursor=pointer]:
+              - img [ref=e370]
+          - generic [ref=e372]:
+            - generic [ref=e373]:
+              - heading "constituency Wise Scores & Grades" [level=2] [ref=e374]
+              - generic [ref=e376]:
+                - generic [ref=e377]:
+                  - checkbox "Aspirant (C) < 50%" [checked] [ref=e378]
+                  - text: Aspirant (C) < 50%
+                - generic [ref=e379]:
+                  - checkbox "Performer (B) 50% – 74%" [checked] [ref=e380]
+                  - text: Performer (B) 50% – 74%
+                - generic [ref=e381]:
+                  - checkbox "Front Runner (A) 75% – 89%" [checked] [ref=e382]
+                  - text: Front Runner (A) 75% – 89%
+                - generic [ref=e383]:
+                  - checkbox "Achiever (A+) 90% – 100%" [checked] [ref=e384]
+                  - text: Achiever (A+) 90% – 100%
+            - img [ref=e388]:
+              - generic [ref=e390]:
+                - generic [ref=e392]: "0"
+                - generic [ref=e394]: "25"
+                - generic [ref=e396]: "50"
+                - generic [ref=e398]: "75"
+                - generic [ref=e400]: "100"
+              - generic [ref=e402]:
+                - generic [ref=e404]: Amadalavalasa
+                - generic [ref=e406]: Etcherla
+                - generic [ref=e408]: Ichchapuram
+                - generic [ref=e410]: Narasannapeta
+                - generic [ref=e412]: Palasa
+                - generic [ref=e414]: Pathapatnam
+                - generic [ref=e416]: Srikakulam
+                - generic [ref=e418]: Tekkali
+                - generic [ref=e420]: Bobbili
+                - generic [ref=e422]: Cheepurupalle
+                - generic [ref=e424]: Gajapathinagaram
+                - generic [ref=e426]: Nellimarla
+                - generic [ref=e428]: Rajam (SC)
+                - generic [ref=e430]: Salur (ST)
+                - generic [ref=e432]: Srungavarapukota
+                - generic [ref=e434]: Vizianagaram
+                - generic [ref=e436]: Kurupam (ST)
+                - generic [ref=e438]: Palakonda (ST)
+                - generic [ref=e440]: Parvathipuram (SC)
+                - generic [ref=e442]: Araku Valley (ST)
+                - generic [ref=e444]: Paderu (ST)
+                - generic [ref=e446]: Bhimili
+                - generic [ref=e448]: Gajuwaka
+                - generic [ref=e450]: Pendurthi
+                - generic [ref=e452]: Visakhapatnam East
+                - generic [ref=e454]: VisakhapatnamNorth
+                - generic [ref=e456]: VisakhapatnamSouth
+                - generic [ref=e458]: VisakhapatnamWest
+                - generic [ref=e460]: Anakapalle
+                - generic [ref=e462]: Chodavaram
+                - generic [ref=e464]: Madugula
+                - generic [ref=e466]: Narsipatnam
+                - generic [ref=e468]: Payakaraopet (SC)
+                - generic [ref=e470]: Yelamanchili
+                - generic [ref=e472]: Anaparthy
+                - generic [ref=e474]: Jaggampeta
+                - generic [ref=e476]: Kakinada City
+                - generic [ref=e478]: Kakinada Rural
+                - generic [ref=e480]: Mummidivaram
+                - generic [ref=e482]: Peddapuram
+                - generic [ref=e484]: Pithapuram
+                - generic [ref=e486]: Prathipadu
+                - generic [ref=e488]: Ramachandrapuram
+                - generic [ref=e490]: Tuni
+                - generic [ref=e492]: Amalapuram (SC)
+                - generic [ref=e494]: Gannavaram (SC)
+                - generic [ref=e496]: Kothapeta
+                - generic [ref=e498]: Razole (SC)
+                - generic [ref=e500]: Gopalapuram (SC)
+                - generic [ref=e502]: Kovvur (SC)
+                - generic [ref=e504]: Mandapeta
+                - generic [ref=e506]: Nidadavole
+                - generic [ref=e508]: Rajahmundry City
+                - generic [ref=e510]: Rajahmundry Rural
+                - generic [ref=e512]: Rajanagaram
+                - generic [ref=e514]: Achanta
+                - generic [ref=e516]: Bhimavaram
+                - generic [ref=e518]: Narasapuram
+                - generic [ref=e520]: Palacole
+                - generic [ref=e522]: Tadepalligudem
+                - generic [ref=e524]: Tanuku
+                - generic [ref=e526]: Undi
+                - generic [ref=e528]: Ungutur
+                - generic [ref=e530]: Chintalapudi (SC)
+                - generic [ref=e532]: Denduluru
+                - generic [ref=e534]: Eluru
+                - generic [ref=e536]: Kaikalur
+                - generic [ref=e538]: Nuzvid
+                - generic [ref=e540]: Polavaram (ST)
+                - generic [ref=e542]: Avanigadda
+                - generic [ref=e544]: Gannavaram
+                - generic [ref=e546]: Gudivada
+                - generic [ref=e548]: Machilipatnam
+                - generic [ref=e550]: Pamarru (SC)
+                - generic [ref=e552]: Pedana
+                - generic [ref=e554]: Penamaluru
+                - generic [ref=e556]: Jaggayyapeta
+                - generic [ref=e558]: Mylavaram
+                - generic [ref=e560]: Nandigama (SC)
+                - generic [ref=e562]: Tiruvuru (SC)
+                - generic [ref=e564]: Vijayawada Central
+                - generic [ref=e566]: Vijayawada East
+                - generic [ref=e568]: Vijayawada West
+                - generic [ref=e570]: Guntur East
+                - generic [ref=e572]: Guntur West
+                - generic [ref=e574]: Mangalagiri
+                - generic [ref=e576]: Ponnur
+                - generic [ref=e578]: Prathipadu (SC)
+                - generic [ref=e580]: Tadikonda (SC)
+                - generic [ref=e582]: Tenali
+                - generic [ref=e584]: Bapatla
+                - generic [ref=e586]: Chirala
+                - generic [ref=e588]: Parchur
+                - generic [ref=e590]: Repalle
+                - generic [ref=e592]: Vemuru (SC)
+                - generic [ref=e594]: Chilakaluripet
+                - generic [ref=e596]: Gurajala
+                - generic [ref=e598]: Macherla
+                - generic [ref=e600]: Narasaraopet
+                - generic [ref=e602]: Pedakurapadu
+                - generic [ref=e604]: Sattenapalle
+                - generic [ref=e606]: Vinukonda
+                - generic [ref=e608]: Addanki
+                - generic [ref=e610]: Darsi
+                - generic [ref=e612]: Kandukur
+                - generic [ref=e614]: Kondapi (SC)
+                - generic [ref=e616]: Ongole
+                - generic [ref=e618]: Santhanuthalapadu(SC)
+                - generic [ref=e620]: Atmakur
+                - generic [ref=e622]: Gudur (SC)
+                - generic [ref=e624]: Kavali
+                - generic [ref=e626]: Kovur
+                - generic [ref=e628]: Nellore City
+                - generic [ref=e630]: Nellore Rural
+                - generic [ref=e632]: Sarvepalli
+                - generic [ref=e634]: Udayagiri
+                - generic [ref=e636]: Venkatagiri
+                - generic [ref=e638]: Adoni
+                - generic [ref=e640]: Alur
+                - generic [ref=e642]: Kodumur (SC)
+                - generic [ref=e644]: Kurnool
+                - generic [ref=e646]: Mantralayam
+                - generic [ref=e648]: Panyam
+                - generic [ref=e650]: Pattikonda
+                - generic [ref=e652]: Yemmiganur
+                - generic [ref=e654]: Allagadda
+                - generic [ref=e656]: Banaganapalle
+                - generic [ref=e658]: Dhone
+                - generic [ref=e660]: Nandikotkur (SC)
+                - generic [ref=e662]: Nandyal
+                - generic [ref=e664]: Srisailam
+                - generic [ref=e666]: Anantapur Urban
+                - generic [ref=e668]: Guntakal
+                - generic [ref=e670]: Kalyandurg
+                - generic [ref=e672]: Rapthadu
+                - generic [ref=e674]: Rayadurg
+                - generic [ref=e676]: Singanamala (SC)
+                - generic [ref=e678]: Tadpatri
+                - generic [ref=e680]: Uravakonda
+                - generic [ref=e682]: Dharmavaram
+                - generic [ref=e684]: Hindupur
+                - generic [ref=e686]: Kadiri
+                - generic [ref=e688]: Madakasira (SC)
+                - generic [ref=e690]: Penukonda
+                - generic [ref=e692]: Puttaparthi
+                - generic [ref=e694]: Badvel (SC)
+                - generic [ref=e696]: Jammalamadugu
+                - generic [ref=e698]: Kadapa
+                - generic [ref=e700]: Kamalapuram
+                - generic [ref=e702]: Mydukur
+                - generic [ref=e704]: Proddatur
+                - generic [ref=e706]: Pulivendla
+                - generic [ref=e708]: Rajampet
+                - generic [ref=e710]: Madanapalle
+                - generic [ref=e712]: Pileru
+                - generic [ref=e714]: Punganur
+                - generic [ref=e716]: Rayachoti
+                - generic [ref=e718]: Thamballapalle
+                - generic [ref=e720]: Chittoor
+                - generic [ref=e722]: Gangadhara Nellore(SC)
+                - generic [ref=e724]: Kuppam
+                - generic [ref=e726]: Nagari
+                - generic [ref=e728]: Palamaner
+                - generic [ref=e730]: Puthalapattu (SC)
+                - generic [ref=e732]: Chandragiri
+                - generic [ref=e734]: Kodur (SC)
+                - generic [ref=e736]: Satyavedu (SC)
+                - generic [ref=e738]: Srikalahasti
+                - generic [ref=e740]: Sullurpeta (SC)
+                - generic [ref=e742]: Tirupati
+                - generic [ref=e744]: Rampachodavaram(ST)
+                - generic [ref=e746]: Giddalur
+                - generic [ref=e748]: Kanigiri
+                - generic [ref=e750]: Markapuram
+                - generic [ref=e752]: Yerragondapalem(SC)
+              - generic [ref=e1105]:
+                - generic [ref=e1106]: 81%
+                - generic [ref=e1107]: 83%
+                - generic [ref=e1108]: 74%
+                - generic [ref=e1109]: 79%
+                - generic [ref=e1110]: 72%
+                - generic [ref=e1111]: 77%
+                - generic [ref=e1112]: 85%
+                - generic [ref=e1113]: 76%
+                - generic [ref=e1114]: 82%
+                - generic [ref=e1115]: 87%
+                - generic [ref=e1116]: 86%
+                - generic [ref=e1117]: 81%
+                - generic [ref=e1118]: 83%
+                - generic [ref=e1119]: 81%
+                - generic [ref=e1120]: 85%
+                - generic [ref=e1121]: 83%
+                - generic [ref=e1122]: 82%
+                - generic [ref=e1123]: 80%
+                - generic [ref=e1124]: 81%
+                - generic [ref=e1125]: 83%
+                - generic [ref=e1126]: 89%
+                - generic [ref=e1127]: 85%
+                - generic [ref=e1128]: 89%
+                - generic [ref=e1129]: 88%
+                - generic [ref=e1130]: 89%
+                - generic [ref=e1131]: 93%
+                - generic [ref=e1132]: 93%
+                - generic [ref=e1133]: 94%
+                - generic [ref=e1134]: 85%
+                - generic [ref=e1135]: 88%
+                - generic [ref=e1136]: 92%
+                - generic [ref=e1137]: 90%
+                - generic [ref=e1138]: 87%
+                - generic [ref=e1139]: 87%
+                - generic [ref=e1140]: 79%
+                - generic [ref=e1141]: 88%
+                - generic [ref=e1142]: 83%
+                - generic [ref=e1143]: 84%
+                - generic [ref=e1144]: 80%
+                - generic [ref=e1145]: 88%
+                - generic [ref=e1146]: 85%
+                - generic [ref=e1147]: 88%
+                - generic [ref=e1148]: 79%
+                - generic [ref=e1149]: 88%
+                - generic [ref=e1150]: 78%
+                - generic [ref=e1151]: 81%
+                - generic [ref=e1152]: 81%
+                - generic [ref=e1153]: 78%
+                - generic [ref=e1154]: 82%
+                - generic [ref=e1155]: 74%
+                - generic [ref=e1156]: 73%
+                - generic [ref=e1157]: 78%
+                - generic [ref=e1158]: 81%
+                - generic [ref=e1159]: 77%
+                - generic [ref=e1160]: 73%
+                - generic [ref=e1161]: 71%
+                - generic [ref=e1162]: 75%
+                - generic [ref=e1163]: 71%
+                - generic [ref=e1164]: 75%
+                - generic [ref=e1165]: 70%
+                - generic [ref=e1166]: 71%
+                - generic [ref=e1167]: 75%
+                - generic [ref=e1168]: 84%
+                - generic [ref=e1169]: 84%
+                - generic [ref=e1170]: 84%
+                - generic [ref=e1171]: 82%
+                - generic [ref=e1172]: 85%
+                - generic [ref=e1173]: 83%
+                - generic [ref=e1174]: 82%
+                - generic [ref=e1175]: 81%
+                - generic [ref=e1176]: 76%
+                - generic [ref=e1177]: 78%
+                - generic [ref=e1178]: 75%
+                - generic [ref=e1179]: 82%
+                - generic [ref=e1180]: 83%
+                - generic [ref=e1181]: 78%
+                - generic [ref=e1182]: 83%
+                - generic [ref=e1183]: 82%
+                - generic [ref=e1184]: 82%
+                - generic [ref=e1185]: 83%
+                - generic [ref=e1186]: 88%
+                - generic [ref=e1187]: 90%
+                - generic [ref=e1188]: 88%
+                - generic [ref=e1189]: 86%
+                - generic [ref=e1190]: 78%
+                - generic [ref=e1191]: 88%
+                - generic [ref=e1192]: 83%
+                - generic [ref=e1193]: 80%
+                - generic [ref=e1194]: 86%
+                - generic [ref=e1195]: 87%
+                - generic [ref=e1196]: 85%
+                - generic [ref=e1197]: 85%
+                - generic [ref=e1198]: 81%
+                - generic [ref=e1199]: 85%
+                - generic [ref=e1200]: 87%
+                - generic [ref=e1201]: 80%
+                - generic [ref=e1202]: 77%
+                - generic [ref=e1203]: 76%
+                - generic [ref=e1204]: 81%
+                - generic [ref=e1205]: 78%
+                - generic [ref=e1206]: 78%
+                - generic [ref=e1207]: 79%
+                - generic [ref=e1208]: 78%
+                - generic [ref=e1209]: 80%
+                - generic [ref=e1210]: 84%
+                - generic [ref=e1211]: 83%
+                - generic [ref=e1212]: 81%
+                - generic [ref=e1213]: 83%
+                - generic [ref=e1214]: 80%
+                - generic [ref=e1215]: 84%
+                - generic [ref=e1216]: 80%
+                - generic [ref=e1217]: 78%
+                - generic [ref=e1218]: 81%
+                - generic [ref=e1219]: 74%
+                - generic [ref=e1220]: 75%
+                - generic [ref=e1221]: 82%
+                - generic [ref=e1222]: 80%
+                - generic [ref=e1223]: 81%
+                - generic [ref=e1224]: 77%
+                - generic [ref=e1225]: 78%
+                - generic [ref=e1226]: 82%
+                - generic [ref=e1227]: 78%
+                - generic [ref=e1228]: 77%
+                - generic [ref=e1229]: 77%
+                - generic [ref=e1230]: 79%
+                - generic [ref=e1231]: 76%
+                - generic [ref=e1232]: 74%
+                - generic [ref=e1233]: 81%
+                - generic [ref=e1234]: 74%
+                - generic [ref=e1235]: 73%
+                - generic [ref=e1236]: 71%
+                - generic [ref=e1237]: 69%
+                - generic [ref=e1238]: 69%
+                - generic [ref=e1239]: 73%
+                - generic [ref=e1240]: 74%
+                - generic [ref=e1241]: 72%
+                - generic [ref=e1242]: 75%
+                - generic [ref=e1243]: 73%
+                - generic [ref=e1244]: 69%
+                - generic [ref=e1245]: 83%
+                - generic [ref=e1246]: 81%
+                - generic [ref=e1247]: 83%
+                - generic [ref=e1248]: 82%
+                - generic [ref=e1249]: 81%
+                - generic [ref=e1250]: 81%
+                - generic [ref=e1251]: 75%
+                - generic [ref=e1252]: 79%
+                - generic [ref=e1253]: 79%
+                - generic [ref=e1254]: 75%
+                - generic [ref=e1255]: 76%
+                - generic [ref=e1256]: 74%
+                - generic [ref=e1257]: 79%
+                - generic [ref=e1258]: 76%
+                - generic [ref=e1259]: 84%
+                - generic [ref=e1260]: 83%
+                - generic [ref=e1261]: 84%
+                - generic [ref=e1262]: 83%
+                - generic [ref=e1263]: 85%
+                - generic [ref=e1264]: 78%
+                - generic [ref=e1265]: 75%
+                - generic [ref=e1266]: 79%
+                - generic [ref=e1267]: 73%
+                - generic [ref=e1268]: 82%
+                - generic [ref=e1269]: 82%
+                - generic [ref=e1270]: 87%
+                - generic [ref=e1271]: 88%
+                - generic [ref=e1272]: 91%
+                - generic [ref=e1273]: 84%
+                - generic [ref=e1274]: 78%
+                - generic [ref=e1275]: 84%
+                - generic [ref=e1276]: 78%
+                - generic [ref=e1277]: 77%
+                - generic [ref=e1278]: 84%
+                - generic [ref=e1279]: 84%
+                - generic [ref=e1280]: 84%
+            - generic [ref=e1281]:
+              - generic [ref=e1282]:
+                - generic [ref=e1284]:
+                  - img [ref=e1287]
+                  - textbox "Search" [ref=e1289]
+                - generic [ref=e1290]:
+                  - button [ref=e1291] [cursor=pointer]:
+                    - img [ref=e1292]
+                  - button [ref=e1294] [cursor=pointer]:
+                    - img [ref=e1296]
+                  - button "ALL Constituencies" [ref=e1298] [cursor=pointer]:
+                    - generic [ref=e1299]:
+                      - text: ALL Constituencies
+                      - img [ref=e1300]
+              - table [ref=e1304]:
+                - rowgroup [ref=e1305]:
+                  - row "S.No District Name ↕ Constituency Name ↕ No of Indicators ↕ Score ↕ Grade ↕" [ref=e1306]:
+                    - columnheader "S.No" [ref=e1307]
+                    - columnheader "District Name ↕" [ref=e1308]:
+                      - text: District Name
+                      - button "↕" [ref=e1309] [cursor=pointer]
+                    - columnheader "Constituency Name ↕" [ref=e1310]:
+                      - text: Constituency Name
+                      - button "↕" [ref=e1311] [cursor=pointer]
+                    - columnheader "No of Indicators ↕" [ref=e1312]:
+                      - text: No of Indicators
+                      - button "↕" [ref=e1313] [cursor=pointer]
+                    - columnheader "Score ↕" [ref=e1314]:
+                      - text: Score
+                      - button "↕" [ref=e1315] [cursor=pointer]
+                    - columnheader "Grade ↕" [ref=e1316]:
+                      - text: Grade
+                      - button "↕" [ref=e1317] [cursor=pointer]
+                - rowgroup [ref=e1318]:
+                  - row "1 SRIKAKULAM Amadalavalasa 64 A" [ref=e1319]:
+                    - cell "1" [ref=e1320]
+                    - cell "SRIKAKULAM" [ref=e1321]
+                    - cell "Amadalavalasa" [ref=e1322]:
+                      - link "Amadalavalasa" [ref=e1323] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "64" [ref=e1324]:
+                      - link "64" [ref=e1325] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1326]:
+                      - img [ref=e1327]:
+                        - generic [ref=e1330]: "81"
+                    - cell "A" [ref=e1331]
+                  - row "2 SRIKAKULAM Etcherla 58 A" [ref=e1332]:
+                    - cell "2" [ref=e1333]
+                    - cell "SRIKAKULAM" [ref=e1334]
+                    - cell "Etcherla" [ref=e1335]:
+                      - link "Etcherla" [ref=e1336] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e1337]:
+                      - link "58" [ref=e1338] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1339]:
+                      - img [ref=e1340]:
+                        - generic [ref=e1343]: "83"
+                    - cell "A" [ref=e1344]
+                  - row "3 SRIKAKULAM Ichchapuram 60 B" [ref=e1345]:
+                    - cell "3" [ref=e1346]
+                    - cell "SRIKAKULAM" [ref=e1347]
+                    - cell "Ichchapuram" [ref=e1348]:
+                      - link "Ichchapuram" [ref=e1349] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "60" [ref=e1350]:
+                      - link "60" [ref=e1351] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1352]:
+                      - img [ref=e1353]:
+                        - generic [ref=e1356]: "74"
+                    - cell "B" [ref=e1357]
+                  - row "4 SRIKAKULAM Narasannapeta 55 A" [ref=e1358]:
+                    - cell "4" [ref=e1359]
+                    - cell "SRIKAKULAM" [ref=e1360]
+                    - cell "Narasannapeta" [ref=e1361]:
+                      - link "Narasannapeta" [ref=e1362] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e1363]:
+                      - link "55" [ref=e1364] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1365]:
+                      - img [ref=e1366]:
+                        - generic [ref=e1369]: "79"
+                    - cell "A" [ref=e1370]
+                  - row "5 SRIKAKULAM Palasa 61 B" [ref=e1371]:
+                    - cell "5" [ref=e1372]
+                    - cell "SRIKAKULAM" [ref=e1373]
+                    - cell "Palasa" [ref=e1374]:
+                      - link "Palasa" [ref=e1375] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e1376]:
+                      - link "61" [active] [ref=e1377] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1378]:
+                      - img [ref=e1379]:
+                        - generic [ref=e1382]: "72"
+                    - cell "B" [ref=e1383]
+                  - row "6 SRIKAKULAM Pathapatnam 59 A" [ref=e1384]:
+                    - cell "6" [ref=e1385]
+                    - cell "SRIKAKULAM" [ref=e1386]
+                    - cell "Pathapatnam" [ref=e1387]:
+                      - link "Pathapatnam" [ref=e1388] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e1389]:
+                      - link "59" [ref=e1390] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1391]:
+                      - img [ref=e1392]:
+                        - generic [ref=e1395]: "77"
+                    - cell "A" [ref=e1396]
+                  - row "7 SRIKAKULAM Srikakulam 61 A" [ref=e1397]:
+                    - cell "7" [ref=e1398]
+                    - cell "SRIKAKULAM" [ref=e1399]
+                    - cell "Srikakulam" [ref=e1400]:
+                      - link "Srikakulam" [ref=e1401] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e1402]:
+                      - link "61" [ref=e1403] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1404]:
+                      - img [ref=e1405]:
+                        - generic [ref=e1408]: "85"
+                    - cell "A" [ref=e1409]
+                  - row "8 SRIKAKULAM Tekkali 55 A" [ref=e1410]:
+                    - cell "8" [ref=e1411]
+                    - cell "SRIKAKULAM" [ref=e1412]
+                    - cell "Tekkali" [ref=e1413]:
+                      - link "Tekkali" [ref=e1414] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e1415]:
+                      - link "55" [ref=e1416] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1417]:
+                      - img [ref=e1418]:
+                        - generic [ref=e1421]: "76"
+                    - cell "A" [ref=e1422]
+                  - row "9 VIZIANAGARAM Bobbili 61 A" [ref=e1423]:
+                    - cell "9" [ref=e1424]
+                    - cell "VIZIANAGARAM" [ref=e1425]
+                    - cell "Bobbili" [ref=e1426]:
+                      - link "Bobbili" [ref=e1427] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e1428]:
+                      - link "61" [ref=e1429] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1430]:
+                      - img [ref=e1431]:
+                        - generic [ref=e1434]: "82"
+                    - cell "A" [ref=e1435]
+                  - row "10 VIZIANAGARAM Cheepurupalle 55 A" [ref=e1436]:
+                    - cell "10" [ref=e1437]
+                    - cell "VIZIANAGARAM" [ref=e1438]
+                    - cell "Cheepurupalle" [ref=e1439]:
+                      - link "Cheepurupalle" [ref=e1440] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e1441]:
+                      - link "55" [ref=e1442] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1443]:
+                      - img [ref=e1444]:
+                        - generic [ref=e1447]: "87"
+                    - cell "A" [ref=e1448]
+                  - row "11 VIZIANAGARAM Gajapathinagaram 58 A" [ref=e1449]:
+                    - cell "11" [ref=e1450]
+                    - cell "VIZIANAGARAM" [ref=e1451]
+                    - cell "Gajapathinagaram" [ref=e1452]:
+                      - link "Gajapathinagaram" [ref=e1453] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e1454]:
+                      - link "58" [ref=e1455] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1456]:
+                      - img [ref=e1457]:
+                        - generic [ref=e1460]: "86"
+                    - cell "A" [ref=e1461]
+                  - row "12 VIZIANAGARAM Nellimarla 63 A" [ref=e1462]:
+                    - cell "12" [ref=e1463]
+                    - cell "VIZIANAGARAM" [ref=e1464]
+                    - cell "Nellimarla" [ref=e1465]:
+                      - link "Nellimarla" [ref=e1466] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "63" [ref=e1467]:
+                      - link "63" [ref=e1468] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1469]:
+                      - img [ref=e1470]:
+                        - generic [ref=e1473]: "81"
+                    - cell "A" [ref=e1474]
+                  - row "13 VIZIANAGARAM Rajam (SC) 62 A" [ref=e1475]:
+                    - cell "13" [ref=e1476]
+                    - cell "VIZIANAGARAM" [ref=e1477]
+                    - cell "Rajam (SC)" [ref=e1478]:
+                      - link "Rajam (SC)" [ref=e1479] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e1480]:
+                      - link "62" [ref=e1481] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1482]:
+                      - img [ref=e1483]:
+                        - generic [ref=e1486]: "83"
+                    - cell "A" [ref=e1487]
+                  - row "14 VIZIANAGARAM Salur (ST) 62 A" [ref=e1488]:
+                    - cell "14" [ref=e1489]
+                    - cell "VIZIANAGARAM" [ref=e1490]
+                    - cell "Salur (ST)" [ref=e1491]:
+                      - link "Salur (ST)" [ref=e1492] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e1493]:
+                      - link "62" [ref=e1494] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1495]:
+                      - img [ref=e1496]:
+                        - generic [ref=e1499]: "81"
+                    - cell "A" [ref=e1500]
+                  - row "15 VIZIANAGARAM Srungavarapukota 55 A" [ref=e1501]:
+                    - cell "15" [ref=e1502]
+                    - cell "VIZIANAGARAM" [ref=e1503]
+                    - cell "Srungavarapukota" [ref=e1504]:
+                      - link "Srungavarapukota" [ref=e1505] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e1506]:
+                      - link "55" [ref=e1507] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1508]:
+                      - img [ref=e1509]:
+                        - generic [ref=e1512]: "85"
+                    - cell "A" [ref=e1513]
+                  - row "16 VIZIANAGARAM Vizianagaram 61 A" [ref=e1514]:
+                    - cell "16" [ref=e1515]
+                    - cell "VIZIANAGARAM" [ref=e1516]
+                    - cell "Vizianagaram" [ref=e1517]:
+                      - link "Vizianagaram" [ref=e1518] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e1519]:
+                      - link "61" [ref=e1520] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1521]:
+                      - img [ref=e1522]:
+                        - generic [ref=e1525]: "83"
+                    - cell "A" [ref=e1526]
+                  - row "17 PARVATHIPURAM MANYAM Kurupam (ST) 56 A" [ref=e1527]:
+                    - cell "17" [ref=e1528]
+                    - cell "PARVATHIPURAM MANYAM" [ref=e1529]
+                    - cell "Kurupam (ST)" [ref=e1530]:
+                      - link "Kurupam (ST)" [ref=e1531] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e1532]:
+                      - link "56" [ref=e1533] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1534]:
+                      - img [ref=e1535]:
+                        - generic [ref=e1538]: "82"
+                    - cell "A" [ref=e1539]
+                  - row "18 PARVATHIPURAM MANYAM Palakonda (ST) 60 A" [ref=e1540]:
+                    - cell "18" [ref=e1541]
+                    - cell "PARVATHIPURAM MANYAM" [ref=e1542]
+                    - cell "Palakonda (ST)" [ref=e1543]:
+                      - link "Palakonda (ST)" [ref=e1544] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "60" [ref=e1545]:
+                      - link "60" [ref=e1546] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1547]:
+                      - img [ref=e1548]:
+                        - generic [ref=e1551]: "80"
+                    - cell "A" [ref=e1552]
+                  - row "19 PARVATHIPURAM MANYAM Parvathipuram (SC) 62 A" [ref=e1553]:
+                    - cell "19" [ref=e1554]
+                    - cell "PARVATHIPURAM MANYAM" [ref=e1555]
+                    - cell "Parvathipuram (SC)" [ref=e1556]:
+                      - link "Parvathipuram (SC)" [ref=e1557] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e1558]:
+                      - link "62" [ref=e1559] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1560]:
+                      - img [ref=e1561]:
+                        - generic [ref=e1564]: "81"
+                    - cell "A" [ref=e1565]
+                  - row "20 ALLURI SITHARAMA RAJU Araku Valley (ST) 53 A" [ref=e1566]:
+                    - cell "20" [ref=e1567]
+                    - cell "ALLURI SITHARAMA RAJU" [ref=e1568]
+                    - cell "Araku Valley (ST)" [ref=e1569]:
+                      - link "Araku Valley (ST)" [ref=e1570] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "53" [ref=e1571]:
+                      - link "53" [ref=e1572] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1573]:
+                      - img [ref=e1574]:
+                        - generic [ref=e1577]: "83"
+                    - cell "A" [ref=e1578]
+                  - row "21 ALLURI SITHARAMA RAJU Paderu (ST) 55 A" [ref=e1579]:
+                    - cell "21" [ref=e1580]
+                    - cell "ALLURI SITHARAMA RAJU" [ref=e1581]
+                    - cell "Paderu (ST)" [ref=e1582]:
+                      - link "Paderu (ST)" [ref=e1583] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e1584]:
+                      - link "55" [ref=e1585] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1586]:
+                      - img [ref=e1587]:
+                        - generic [ref=e1590]: "89"
+                    - cell "A" [ref=e1591]
+                  - row "22 VISAKHAPATNAM Bhimili 59 A" [ref=e1592]:
+                    - cell "22" [ref=e1593]
+                    - cell "VISAKHAPATNAM" [ref=e1594]
+                    - cell "Bhimili" [ref=e1595]:
+                      - link "Bhimili" [ref=e1596] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e1597]:
+                      - link "59" [ref=e1598] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1599]:
+                      - img [ref=e1600]:
+                        - generic [ref=e1603]: "85"
+                    - cell "A" [ref=e1604]
+                  - row "23 VISAKHAPATNAM Gajuwaka 44 A" [ref=e1605]:
+                    - cell "23" [ref=e1606]
+                    - cell "VISAKHAPATNAM" [ref=e1607]
+                    - cell "Gajuwaka" [ref=e1608]:
+                      - link "Gajuwaka" [ref=e1609] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "44" [ref=e1610]:
+                      - link "44" [ref=e1611] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1612]:
+                      - img [ref=e1613]:
+                        - generic [ref=e1616]: "89"
+                    - cell "A" [ref=e1617]
+                  - row "24 VISAKHAPATNAM Pendurthi 59 A" [ref=e1618]:
+                    - cell "24" [ref=e1619]
+                    - cell "VISAKHAPATNAM" [ref=e1620]
+                    - cell "Pendurthi" [ref=e1621]:
+                      - link "Pendurthi" [ref=e1622] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e1623]:
+                      - link "59" [ref=e1624] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1625]:
+                      - img [ref=e1626]:
+                        - generic [ref=e1629]: "88"
+                    - cell "A" [ref=e1630]
+                  - row "25 VISAKHAPATNAM Visakhapatnam East 43 A" [ref=e1631]:
+                    - cell "25" [ref=e1632]
+                    - cell "VISAKHAPATNAM" [ref=e1633]
+                    - cell "Visakhapatnam East" [ref=e1634]:
+                      - link "Visakhapatnam East" [ref=e1635] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "43" [ref=e1636]:
+                      - link "43" [ref=e1637] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1638]:
+                      - img [ref=e1639]:
+                        - generic [ref=e1642]: "89"
+                    - cell "A" [ref=e1643]
+                  - row "26 VISAKHAPATNAM Visakhapatnam North 38 A+" [ref=e1644]:
+                    - cell "26" [ref=e1645]
+                    - cell "VISAKHAPATNAM" [ref=e1646]
+                    - cell "Visakhapatnam North" [ref=e1647]:
+                      - link "Visakhapatnam North" [ref=e1648] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "38" [ref=e1649]:
+                      - link "38" [ref=e1650] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1651]:
+                      - img [ref=e1652]:
+                        - generic [ref=e1655]: "93"
+                    - cell "A+" [ref=e1656]
+                  - row "27 VISAKHAPATNAM Visakhapatnam South 29 A+" [ref=e1657]:
+                    - cell "27" [ref=e1658]
+                    - cell "VISAKHAPATNAM" [ref=e1659]
+                    - cell "Visakhapatnam South" [ref=e1660]:
+                      - link "Visakhapatnam South" [ref=e1661] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "29" [ref=e1662]:
+                      - link "29" [ref=e1663] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1664]:
+                      - img [ref=e1665]:
+                        - generic [ref=e1668]: "93"
+                    - cell "A+" [ref=e1669]
+                  - row "28 VISAKHAPATNAM Visakhapatnam West 38 A+" [ref=e1670]:
+                    - cell "28" [ref=e1671]
+                    - cell "VISAKHAPATNAM" [ref=e1672]
+                    - cell "Visakhapatnam West" [ref=e1673]:
+                      - link "Visakhapatnam West" [ref=e1674] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "38" [ref=e1675]:
+                      - link "38" [ref=e1676] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1677]:
+                      - img [ref=e1678]:
+                        - generic [ref=e1681]: "94"
+                    - cell "A+" [ref=e1682]
+                  - row "29 ANAKAPALLI Anakapalle 56 A" [ref=e1683]:
+                    - cell "29" [ref=e1684]
+                    - cell "ANAKAPALLI" [ref=e1685]
+                    - cell "Anakapalle" [ref=e1686]:
+                      - link "Anakapalle" [ref=e1687] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e1688]:
+                      - link "56" [ref=e1689] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1690]:
+                      - img [ref=e1691]:
+                        - generic [ref=e1694]: "85"
+                    - cell "A" [ref=e1695]
+                  - row "30 ANAKAPALLI Chodavaram 57 A" [ref=e1696]:
+                    - cell "30" [ref=e1697]
+                    - cell "ANAKAPALLI" [ref=e1698]
+                    - cell "Chodavaram" [ref=e1699]:
+                      - link "Chodavaram" [ref=e1700] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "57" [ref=e1701]:
+                      - link "57" [ref=e1702] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1703]:
+                      - img [ref=e1704]:
+                        - generic [ref=e1707]: "88"
+                    - cell "A" [ref=e1708]
+                  - row "31 ANAKAPALLI Madugula 56 A+" [ref=e1709]:
+                    - cell "31" [ref=e1710]
+                    - cell "ANAKAPALLI" [ref=e1711]
+                    - cell "Madugula" [ref=e1712]:
+                      - link "Madugula" [ref=e1713] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e1714]:
+                      - link "56" [ref=e1715] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1716]:
+                      - img [ref=e1717]:
+                        - generic [ref=e1720]: "92"
+                    - cell "A+" [ref=e1721]
+                  - row "32 ANAKAPALLI Narsipatnam 60 A+" [ref=e1722]:
+                    - cell "32" [ref=e1723]
+                    - cell "ANAKAPALLI" [ref=e1724]
+                    - cell "Narsipatnam" [ref=e1725]:
+                      - link "Narsipatnam" [ref=e1726] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "60" [ref=e1727]:
+                      - link "60" [ref=e1728] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1729]:
+                      - img [ref=e1730]:
+                        - generic [ref=e1733]: "90"
+                    - cell "A+" [ref=e1734]
+                  - row "33 ANAKAPALLI Payakaraopet (SC) 58 A" [ref=e1735]:
+                    - cell "33" [ref=e1736]
+                    - cell "ANAKAPALLI" [ref=e1737]
+                    - cell "Payakaraopet (SC)" [ref=e1738]:
+                      - link "Payakaraopet (SC)" [ref=e1739] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e1740]:
+                      - link "58" [ref=e1741] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1742]:
+                      - img [ref=e1743]:
+                        - generic [ref=e1746]: "87"
+                    - cell "A" [ref=e1747]
+                  - row "34 ANAKAPALLI Yelamanchili 62 A" [ref=e1748]:
+                    - cell "34" [ref=e1749]
+                    - cell "ANAKAPALLI" [ref=e1750]
+                    - cell "Yelamanchili" [ref=e1751]:
+                      - link "Yelamanchili" [ref=e1752] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e1753]:
+                      - link "62" [ref=e1754] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1755]:
+                      - img [ref=e1756]:
+                        - generic [ref=e1759]: "87"
+                    - cell "A" [ref=e1760]
+                  - row "35 KAKINADA Anaparthy 58 A" [ref=e1761]:
+                    - cell "35" [ref=e1762]
+                    - cell "KAKINADA" [ref=e1763]
+                    - cell "Anaparthy" [ref=e1764]:
+                      - link "Anaparthy" [ref=e1765] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e1766]:
+                      - link "58" [ref=e1767] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1768]:
+                      - img [ref=e1769]:
+                        - generic [ref=e1772]: "79"
+                    - cell "A" [ref=e1773]
+                  - row "36 KAKINADA Jaggampeta 58 A" [ref=e1774]:
+                    - cell "36" [ref=e1775]
+                    - cell "KAKINADA" [ref=e1776]
+                    - cell "Jaggampeta" [ref=e1777]:
+                      - link "Jaggampeta" [ref=e1778] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e1779]:
+                      - link "58" [ref=e1780] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1781]:
+                      - img [ref=e1782]:
+                        - generic [ref=e1785]: "88"
+                    - cell "A" [ref=e1786]
+                  - row "37 KAKINADA Kakinada City 38 A" [ref=e1787]:
+                    - cell "37" [ref=e1788]
+                    - cell "KAKINADA" [ref=e1789]
+                    - cell "Kakinada City" [ref=e1790]:
+                      - link "Kakinada City" [ref=e1791] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "38" [ref=e1792]:
+                      - link "38" [ref=e1793] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1794]:
+                      - img [ref=e1795]:
+                        - generic [ref=e1798]: "83"
+                    - cell "A" [ref=e1799]
+                  - row "38 KAKINADA Kakinada Rural 54 A" [ref=e1800]:
+                    - cell "38" [ref=e1801]
+                    - cell "KAKINADA" [ref=e1802]
+                    - cell "Kakinada Rural" [ref=e1803]:
+                      - link "Kakinada Rural" [ref=e1804] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "54" [ref=e1805]:
+                      - link "54" [ref=e1806] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1807]:
+                      - img [ref=e1808]:
+                        - generic [ref=e1811]: "84"
+                    - cell "A" [ref=e1812]
+                  - row "39 KAKINADA Mummidivaram 59 A" [ref=e1813]:
+                    - cell "39" [ref=e1814]
+                    - cell "KAKINADA" [ref=e1815]
+                    - cell "Mummidivaram" [ref=e1816]:
+                      - link "Mummidivaram" [ref=e1817] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e1818]:
+                      - link "59" [ref=e1819] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1820]:
+                      - img [ref=e1821]:
+                        - generic [ref=e1824]: "80"
+                    - cell "A" [ref=e1825]
+                  - row "40 KAKINADA Peddapuram 62 A" [ref=e1826]:
+                    - cell "40" [ref=e1827]
+                    - cell "KAKINADA" [ref=e1828]
+                    - cell "Peddapuram" [ref=e1829]:
+                      - link "Peddapuram" [ref=e1830] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e1831]:
+                      - link "62" [ref=e1832] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1833]:
+                      - img [ref=e1834]:
+                        - generic [ref=e1837]: "88"
+                    - cell "A" [ref=e1838]
+                  - row "41 KAKINADA Pithapuram 63 A" [ref=e1839]:
+                    - cell "41" [ref=e1840]
+                    - cell "KAKINADA" [ref=e1841]
+                    - cell "Pithapuram" [ref=e1842]:
+                      - link "Pithapuram" [ref=e1843] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "63" [ref=e1844]:
+                      - link "63" [ref=e1845] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1846]:
+                      - img [ref=e1847]:
+                        - generic [ref=e1850]: "85"
+                    - cell "A" [ref=e1851]
+                  - row "42 KAKINADA Prathipadu 60 A" [ref=e1852]:
+                    - cell "42" [ref=e1853]
+                    - cell "KAKINADA" [ref=e1854]
+                    - cell "Prathipadu" [ref=e1855]:
+                      - link "Prathipadu" [ref=e1856] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "60" [ref=e1857]:
+                      - link "60" [ref=e1858] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1859]:
+                      - img [ref=e1860]:
+                        - generic [ref=e1863]: "88"
+                    - cell "A" [ref=e1864]
+                  - row "43 KAKINADA Ramachandrapuram 61 A" [ref=e1865]:
+                    - cell "43" [ref=e1866]
+                    - cell "KAKINADA" [ref=e1867]
+                    - cell "Ramachandrapuram" [ref=e1868]:
+                      - link "Ramachandrapuram" [ref=e1869] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e1870]:
+                      - link "61" [ref=e1871] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1872]:
+                      - img [ref=e1873]:
+                        - generic [ref=e1876]: "79"
+                    - cell "A" [ref=e1877]
+                  - row "44 KAKINADA Tuni 61 A" [ref=e1878]:
+                    - cell "44" [ref=e1879]
+                    - cell "KAKINADA" [ref=e1880]
+                    - cell "Tuni" [ref=e1881]:
+                      - link "Tuni" [ref=e1882] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e1883]:
+                      - link "61" [ref=e1884] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1885]:
+                      - img [ref=e1886]:
+                        - generic [ref=e1889]: "88"
+                    - cell "A" [ref=e1890]
+                  - row "45 DR. B.R.AMBEDKAR KONASEEMA Amalapuram (SC) 54 A" [ref=e1891]:
+                    - cell "45" [ref=e1892]
+                    - cell "DR. B.R.AMBEDKAR KONASEEMA" [ref=e1893]
+                    - cell "Amalapuram (SC)" [ref=e1894]:
+                      - link "Amalapuram (SC)" [ref=e1895] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "54" [ref=e1896]:
+                      - link "54" [ref=e1897] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1898]:
+                      - img [ref=e1899]:
+                        - generic [ref=e1902]: "78"
+                    - cell "A" [ref=e1903]
+                  - row "46 DR. B.R.AMBEDKAR KONASEEMA Gannavaram (SC) 57 A" [ref=e1904]:
+                    - cell "46" [ref=e1905]
+                    - cell "DR. B.R.AMBEDKAR KONASEEMA" [ref=e1906]
+                    - cell "Gannavaram (SC)" [ref=e1907]:
+                      - link "Gannavaram (SC)" [ref=e1908] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "57" [ref=e1909]:
+                      - link "57" [ref=e1910] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1911]:
+                      - img [ref=e1912]:
+                        - generic [ref=e1915]: "81"
+                    - cell "A" [ref=e1916]
+                  - row "47 DR. B.R.AMBEDKAR KONASEEMA Kothapeta 59 A" [ref=e1917]:
+                    - cell "47" [ref=e1918]
+                    - cell "DR. B.R.AMBEDKAR KONASEEMA" [ref=e1919]
+                    - cell "Kothapeta" [ref=e1920]:
+                      - link "Kothapeta" [ref=e1921] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e1922]:
+                      - link "59" [ref=e1923] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1924]:
+                      - img [ref=e1925]:
+                        - generic [ref=e1928]: "81"
+                    - cell "A" [ref=e1929]
+                  - row "48 DR. B.R.AMBEDKAR KONASEEMA Razole (SC) 49 A" [ref=e1930]:
+                    - cell "48" [ref=e1931]
+                    - cell "DR. B.R.AMBEDKAR KONASEEMA" [ref=e1932]
+                    - cell "Razole (SC)" [ref=e1933]:
+                      - link "Razole (SC)" [ref=e1934] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "49" [ref=e1935]:
+                      - link "49" [ref=e1936] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1937]:
+                      - img [ref=e1938]:
+                        - generic [ref=e1941]: "78"
+                    - cell "A" [ref=e1942]
+                  - row "49 EAST GODAVARI Gopalapuram (SC) 58 A" [ref=e1943]:
+                    - cell "49" [ref=e1944]
+                    - cell "EAST GODAVARI" [ref=e1945]
+                    - cell "Gopalapuram (SC)" [ref=e1946]:
+                      - link "Gopalapuram (SC)" [ref=e1947] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e1948]:
+                      - link "58" [ref=e1949] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1950]:
+                      - img [ref=e1951]:
+                        - generic [ref=e1954]: "82"
+                    - cell "A" [ref=e1955]
+                  - row "50 EAST GODAVARI Kovvur (SC) 61 B" [ref=e1956]:
+                    - cell "50" [ref=e1957]
+                    - cell "EAST GODAVARI" [ref=e1958]
+                    - cell "Kovvur (SC)" [ref=e1959]:
+                      - link "Kovvur (SC)" [ref=e1960] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e1961]:
+                      - link "61" [ref=e1962] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1963]:
+                      - img [ref=e1964]:
+                        - generic [ref=e1967]: "74"
+                    - cell "B" [ref=e1968]
+                  - row "51 EAST GODAVARI Mandapeta 62 B" [ref=e1969]:
+                    - cell "51" [ref=e1970]
+                    - cell "EAST GODAVARI" [ref=e1971]
+                    - cell "Mandapeta" [ref=e1972]:
+                      - link "Mandapeta" [ref=e1973] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e1974]:
+                      - link "62" [ref=e1975] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1976]:
+                      - img [ref=e1977]:
+                        - generic [ref=e1980]: "73"
+                    - cell "B" [ref=e1981]
+                  - row "52 EAST GODAVARI Nidadavole 61 A" [ref=e1982]:
+                    - cell "52" [ref=e1983]
+                    - cell "EAST GODAVARI" [ref=e1984]
+                    - cell "Nidadavole" [ref=e1985]:
+                      - link "Nidadavole" [ref=e1986] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e1987]:
+                      - link "61" [ref=e1988] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e1989]:
+                      - img [ref=e1990]:
+                        - generic [ref=e1993]: "78"
+                    - cell "A" [ref=e1994]
+                  - row "53 EAST GODAVARI Rajahmundry City 42 A" [ref=e1995]:
+                    - cell "53" [ref=e1996]
+                    - cell "EAST GODAVARI" [ref=e1997]
+                    - cell "Rajahmundry City" [ref=e1998]:
+                      - link "Rajahmundry City" [ref=e1999] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "42" [ref=e2000]:
+                      - link "42" [ref=e2001] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2002]:
+                      - img [ref=e2003]:
+                        - generic [ref=e2006]: "81"
+                    - cell "A" [ref=e2007]
+                  - row "54 EAST GODAVARI Rajahmundry Rural 58 A" [ref=e2008]:
+                    - cell "54" [ref=e2009]
+                    - cell "EAST GODAVARI" [ref=e2010]
+                    - cell "Rajahmundry Rural" [ref=e2011]:
+                      - link "Rajahmundry Rural" [ref=e2012] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e2013]:
+                      - link "58" [ref=e2014] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2015]:
+                      - img [ref=e2016]:
+                        - generic [ref=e2019]: "77"
+                    - cell "A" [ref=e2020]
+                  - row "55 EAST GODAVARI Rajanagaram 56 B" [ref=e2021]:
+                    - cell "55" [ref=e2022]
+                    - cell "EAST GODAVARI" [ref=e2023]
+                    - cell "Rajanagaram" [ref=e2024]:
+                      - link "Rajanagaram" [ref=e2025] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e2026]:
+                      - link "56" [ref=e2027] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2028]:
+                      - img [ref=e2029]:
+                        - generic [ref=e2032]: "73"
+                    - cell "B" [ref=e2033]
+                  - row "56 WEST GODAVARI Achanta 53 B" [ref=e2034]:
+                    - cell "56" [ref=e2035]
+                    - cell "WEST GODAVARI" [ref=e2036]
+                    - cell "Achanta" [ref=e2037]:
+                      - link "Achanta" [ref=e2038] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "53" [ref=e2039]:
+                      - link "53" [ref=e2040] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2041]:
+                      - img [ref=e2042]:
+                        - generic [ref=e2045]: "71"
+                    - cell "B" [ref=e2046]
+                  - row "57 WEST GODAVARI Bhimavaram 54 A" [ref=e2047]:
+                    - cell "57" [ref=e2048]
+                    - cell "WEST GODAVARI" [ref=e2049]
+                    - cell "Bhimavaram" [ref=e2050]:
+                      - link "Bhimavaram" [ref=e2051] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "54" [ref=e2052]:
+                      - link "54" [ref=e2053] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2054]:
+                      - img [ref=e2055]:
+                        - generic [ref=e2058]: "75"
+                    - cell "A" [ref=e2059]
+                  - row "58 WEST GODAVARI Narasapuram 59 B" [ref=e2060]:
+                    - cell "58" [ref=e2061]
+                    - cell "WEST GODAVARI" [ref=e2062]
+                    - cell "Narasapuram" [ref=e2063]:
+                      - link "Narasapuram" [ref=e2064] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e2065]:
+                      - link "59" [ref=e2066] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2067]:
+                      - img [ref=e2068]:
+                        - generic [ref=e2071]: "71"
+                    - cell "B" [ref=e2072]
+                  - row "59 WEST GODAVARI Palacole 59 A" [ref=e2073]:
+                    - cell "59" [ref=e2074]
+                    - cell "WEST GODAVARI" [ref=e2075]
+                    - cell "Palacole" [ref=e2076]:
+                      - link "Palacole" [ref=e2077] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e2078]:
+                      - link "59" [ref=e2079] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2080]:
+                      - img [ref=e2081]:
+                        - generic [ref=e2084]: "75"
+                    - cell "A" [ref=e2085]
+                  - row "60 WEST GODAVARI Tadepalligudem 61 B" [ref=e2086]:
+                    - cell "60" [ref=e2087]
+                    - cell "WEST GODAVARI" [ref=e2088]
+                    - cell "Tadepalligudem" [ref=e2089]:
+                      - link "Tadepalligudem" [ref=e2090] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e2091]:
+                      - link "61" [ref=e2092] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2093]:
+                      - img [ref=e2094]:
+                        - generic [ref=e2097]: "70"
+                    - cell "B" [ref=e2098]
+                  - row "61 WEST GODAVARI Tanuku 56 B" [ref=e2099]:
+                    - cell "61" [ref=e2100]
+                    - cell "WEST GODAVARI" [ref=e2101]
+                    - cell "Tanuku" [ref=e2102]:
+                      - link "Tanuku" [ref=e2103] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e2104]:
+                      - link "56" [ref=e2105] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2106]:
+                      - img [ref=e2107]:
+                        - generic [ref=e2110]: "71"
+                    - cell "B" [ref=e2111]
+                  - row "62 WEST GODAVARI Undi 54 A" [ref=e2112]:
+                    - cell "62" [ref=e2113]
+                    - cell "WEST GODAVARI" [ref=e2114]
+                    - cell "Undi" [ref=e2115]:
+                      - link "Undi" [ref=e2116] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "54" [ref=e2117]:
+                      - link "54" [ref=e2118] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2119]:
+                      - img [ref=e2120]:
+                        - generic [ref=e2123]: "75"
+                    - cell "A" [ref=e2124]
+                  - row "63 WEST GODAVARI Ungutur 55 A" [ref=e2125]:
+                    - cell "63" [ref=e2126]
+                    - cell "WEST GODAVARI" [ref=e2127]
+                    - cell "Ungutur" [ref=e2128]:
+                      - link "Ungutur" [ref=e2129] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e2130]:
+                      - link "55" [ref=e2131] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2132]:
+                      - img [ref=e2133]:
+                        - generic [ref=e2136]: "84"
+                    - cell "A" [ref=e2137]
+                  - row "64 ELURU Chintalapudi (SC) 62 A" [ref=e2138]:
+                    - cell "64" [ref=e2139]
+                    - cell "ELURU" [ref=e2140]
+                    - cell "Chintalapudi (SC)" [ref=e2141]:
+                      - link "Chintalapudi (SC)" [ref=e2142] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e2143]:
+                      - link "62" [ref=e2144] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2145]:
+                      - img [ref=e2146]:
+                        - generic [ref=e2149]: "84"
+                    - cell "A" [ref=e2150]
+                  - row "65 ELURU Denduluru 56 A" [ref=e2151]:
+                    - cell "65" [ref=e2152]
+                    - cell "ELURU" [ref=e2153]
+                    - cell "Denduluru" [ref=e2154]:
+                      - link "Denduluru" [ref=e2155] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e2156]:
+                      - link "56" [ref=e2157] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2158]:
+                      - img [ref=e2159]:
+                        - generic [ref=e2162]: "84"
+                    - cell "A" [ref=e2163]
+                  - row "66 ELURU Eluru 49 A" [ref=e2164]:
+                    - cell "66" [ref=e2165]
+                    - cell "ELURU" [ref=e2166]
+                    - cell "Eluru" [ref=e2167]:
+                      - link "Eluru" [ref=e2168] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "49" [ref=e2169]:
+                      - link "49" [ref=e2170] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2171]:
+                      - img [ref=e2172]:
+                        - generic [ref=e2175]: "82"
+                    - cell "A" [ref=e2176]
+                  - row "67 ELURU Kaikalur 48 A" [ref=e2177]:
+                    - cell "67" [ref=e2178]
+                    - cell "ELURU" [ref=e2179]
+                    - cell "Kaikalur" [ref=e2180]:
+                      - link "Kaikalur" [ref=e2181] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "48" [ref=e2182]:
+                      - link "48" [ref=e2183] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2184]:
+                      - img [ref=e2185]:
+                        - generic [ref=e2188]: "85"
+                    - cell "A" [ref=e2189]
+                  - row "68 ELURU Nuzvid 62 A" [ref=e2190]:
+                    - cell "68" [ref=e2191]
+                    - cell "ELURU" [ref=e2192]
+                    - cell "Nuzvid" [ref=e2193]:
+                      - link "Nuzvid" [ref=e2194] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e2195]:
+                      - link "62" [ref=e2196] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2197]:
+                      - img [ref=e2198]:
+                        - generic [ref=e2201]: "83"
+                    - cell "A" [ref=e2202]
+                  - row "69 ELURU Polavaram (ST) 56 A" [ref=e2203]:
+                    - cell "69" [ref=e2204]
+                    - cell "ELURU" [ref=e2205]
+                    - cell "Polavaram (ST)" [ref=e2206]:
+                      - link "Polavaram (ST)" [ref=e2207] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e2208]:
+                      - link "56" [ref=e2209] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2210]:
+                      - img [ref=e2211]:
+                        - generic [ref=e2214]: "82"
+                    - cell "A" [ref=e2215]
+                  - row "70 KRISHNA Avanigadda 56 A" [ref=e2216]:
+                    - cell "70" [ref=e2217]
+                    - cell "KRISHNA" [ref=e2218]
+                    - cell "Avanigadda" [ref=e2219]:
+                      - link "Avanigadda" [ref=e2220] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e2221]:
+                      - link "56" [ref=e2222] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2223]:
+                      - img [ref=e2224]:
+                        - generic [ref=e2227]: "81"
+                    - cell "A" [ref=e2228]
+                  - row "71 KRISHNA Gannavaram 56 A" [ref=e2229]:
+                    - cell "71" [ref=e2230]
+                    - cell "KRISHNA" [ref=e2231]
+                    - cell "Gannavaram" [ref=e2232]:
+                      - link "Gannavaram" [ref=e2233] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e2234]:
+                      - link "56" [ref=e2235] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2236]:
+                      - img [ref=e2237]:
+                        - generic [ref=e2240]: "76"
+                    - cell "A" [ref=e2241]
+                  - row "72 KRISHNA Gudivada 62 A" [ref=e2242]:
+                    - cell "72" [ref=e2243]
+                    - cell "KRISHNA" [ref=e2244]
+                    - cell "Gudivada" [ref=e2245]:
+                      - link "Gudivada" [ref=e2246] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e2247]:
+                      - link "62" [ref=e2248] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2249]:
+                      - img [ref=e2250]:
+                        - generic [ref=e2253]: "78"
+                    - cell "A" [ref=e2254]
+                  - row "73 KRISHNA Machilipatnam 59 A" [ref=e2255]:
+                    - cell "73" [ref=e2256]
+                    - cell "KRISHNA" [ref=e2257]
+                    - cell "Machilipatnam" [ref=e2258]:
+                      - link "Machilipatnam" [ref=e2259] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e2260]:
+                      - link "59" [ref=e2261] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2262]:
+                      - img [ref=e2263]:
+                        - generic [ref=e2266]: "75"
+                    - cell "A" [ref=e2267]
+                  - row "74 KRISHNA Pamarru (SC) 55 A" [ref=e2268]:
+                    - cell "74" [ref=e2269]
+                    - cell "KRISHNA" [ref=e2270]
+                    - cell "Pamarru (SC)" [ref=e2271]:
+                      - link "Pamarru (SC)" [ref=e2272] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e2273]:
+                      - link "55" [ref=e2274] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2275]:
+                      - img [ref=e2276]:
+                        - generic [ref=e2279]: "82"
+                    - cell "A" [ref=e2280]
+                  - row "75 KRISHNA Pedana 58 A" [ref=e2281]:
+                    - cell "75" [ref=e2282]
+                    - cell "KRISHNA" [ref=e2283]
+                    - cell "Pedana" [ref=e2284]:
+                      - link "Pedana" [ref=e2285] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e2286]:
+                      - link "58" [ref=e2287] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2288]:
+                      - img [ref=e2289]:
+                        - generic [ref=e2292]: "83"
+                    - cell "A" [ref=e2293]
+                  - row "76 KRISHNA Penamaluru 61 A" [ref=e2294]:
+                    - cell "76" [ref=e2295]
+                    - cell "KRISHNA" [ref=e2296]
+                    - cell "Penamaluru" [ref=e2297]:
+                      - link "Penamaluru" [ref=e2298] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e2299]:
+                      - link "61" [ref=e2300] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2301]:
+                      - img [ref=e2302]:
+                        - generic [ref=e2305]: "78"
+                    - cell "A" [ref=e2306]
+                  - row "77 NTR Jaggayyapeta 62 A" [ref=e2307]:
+                    - cell "77" [ref=e2308]
+                    - cell "NTR" [ref=e2309]
+                    - cell "Jaggayyapeta" [ref=e2310]:
+                      - link "Jaggayyapeta" [ref=e2311] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e2312]:
+                      - link "62" [ref=e2313] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2314]:
+                      - img [ref=e2315]:
+                        - generic [ref=e2318]: "83"
+                    - cell "A" [ref=e2319]
+                  - row "78 NTR Mylavaram 63 A" [ref=e2320]:
+                    - cell "78" [ref=e2321]
+                    - cell "NTR" [ref=e2322]
+                    - cell "Mylavaram" [ref=e2323]:
+                      - link "Mylavaram" [ref=e2324] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "63" [ref=e2325]:
+                      - link "63" [ref=e2326] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2327]:
+                      - img [ref=e2328]:
+                        - generic [ref=e2331]: "82"
+                    - cell "A" [ref=e2332]
+                  - row "79 NTR Nandigama (SC) 61 A" [ref=e2333]:
+                    - cell "79" [ref=e2334]
+                    - cell "NTR" [ref=e2335]
+                    - cell "Nandigama (SC)" [ref=e2336]:
+                      - link "Nandigama (SC)" [ref=e2337] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e2338]:
+                      - link "61" [ref=e2339] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2340]:
+                      - img [ref=e2341]:
+                        - generic [ref=e2344]: "82"
+                    - cell "A" [ref=e2345]
+                  - row "80 NTR Tiruvuru (SC) 59 A" [ref=e2346]:
+                    - cell "80" [ref=e2347]
+                    - cell "NTR" [ref=e2348]
+                    - cell "Tiruvuru (SC)" [ref=e2349]:
+                      - link "Tiruvuru (SC)" [ref=e2350] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e2351]:
+                      - link "59" [ref=e2352] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2353]:
+                      - img [ref=e2354]:
+                        - generic [ref=e2357]: "83"
+                    - cell "A" [ref=e2358]
+                  - row "81 NTR Vijayawada Central 44 A" [ref=e2359]:
+                    - cell "81" [ref=e2360]
+                    - cell "NTR" [ref=e2361]
+                    - cell "Vijayawada Central" [ref=e2362]:
+                      - link "Vijayawada Central" [ref=e2363] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "44" [ref=e2364]:
+                      - link "44" [ref=e2365] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2366]:
+                      - img [ref=e2367]:
+                        - generic [ref=e2370]: "88"
+                    - cell "A" [ref=e2371]
+                  - row "82 NTR Vijayawada East 38 A+" [ref=e2372]:
+                    - cell "82" [ref=e2373]
+                    - cell "NTR" [ref=e2374]
+                    - cell "Vijayawada East" [ref=e2375]:
+                      - link "Vijayawada East" [ref=e2376] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "38" [ref=e2377]:
+                      - link "38" [ref=e2378] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2379]:
+                      - img [ref=e2380]:
+                        - generic [ref=e2383]: "90"
+                    - cell "A+" [ref=e2384]
+                  - row "83 NTR Vijayawada West 37 A" [ref=e2385]:
+                    - cell "83" [ref=e2386]
+                    - cell "NTR" [ref=e2387]
+                    - cell "Vijayawada West" [ref=e2388]:
+                      - link "Vijayawada West" [ref=e2389] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "37" [ref=e2390]:
+                      - link "37" [ref=e2391] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2392]:
+                      - img [ref=e2393]:
+                        - generic [ref=e2396]: "88"
+                    - cell "A" [ref=e2397]
+                  - row "84 GUNTUR Guntur East 47 A" [ref=e2398]:
+                    - cell "84" [ref=e2399]
+                    - cell "GUNTUR" [ref=e2400]
+                    - cell "Guntur East" [ref=e2401]:
+                      - link "Guntur East" [ref=e2402] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "47" [ref=e2403]:
+                      - link "47" [ref=e2404] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2405]:
+                      - img [ref=e2406]:
+                        - generic [ref=e2409]: "86"
+                    - cell "A" [ref=e2410]
+                  - row "85 GUNTUR Guntur West 55 A" [ref=e2411]:
+                    - cell "85" [ref=e2412]
+                    - cell "GUNTUR" [ref=e2413]
+                    - cell "Guntur West" [ref=e2414]:
+                      - link "Guntur West" [ref=e2415] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e2416]:
+                      - link "55" [ref=e2417] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2418]:
+                      - img [ref=e2419]:
+                        - generic [ref=e2422]: "78"
+                    - cell "A" [ref=e2423]
+                  - row "86 GUNTUR Mangalagiri 61 A" [ref=e2424]:
+                    - cell "86" [ref=e2425]
+                    - cell "GUNTUR" [ref=e2426]
+                    - cell "Mangalagiri" [ref=e2427]:
+                      - link "Mangalagiri" [ref=e2428] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e2429]:
+                      - link "61" [ref=e2430] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2431]:
+                      - img [ref=e2432]:
+                        - generic [ref=e2435]: "88"
+                    - cell "A" [ref=e2436]
+                  - row "87 GUNTUR Ponnur 62 A" [ref=e2437]:
+                    - cell "87" [ref=e2438]
+                    - cell "GUNTUR" [ref=e2439]
+                    - cell "Ponnur" [ref=e2440]:
+                      - link "Ponnur" [ref=e2441] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e2442]:
+                      - link "62" [ref=e2443] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2444]:
+                      - img [ref=e2445]:
+                        - generic [ref=e2448]: "83"
+                    - cell "A" [ref=e2449]
+                  - row "88 GUNTUR Prathipadu (SC) 55 A" [ref=e2450]:
+                    - cell "88" [ref=e2451]
+                    - cell "GUNTUR" [ref=e2452]
+                    - cell "Prathipadu (SC)" [ref=e2453]:
+                      - link "Prathipadu (SC)" [ref=e2454] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e2455]:
+                      - link "55" [ref=e2456] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2457]:
+                      - img [ref=e2458]:
+                        - generic [ref=e2461]: "80"
+                    - cell "A" [ref=e2462]
+                  - row "89 GUNTUR Tadikonda (SC) 56 A" [ref=e2463]:
+                    - cell "89" [ref=e2464]
+                    - cell "GUNTUR" [ref=e2465]
+                    - cell "Tadikonda (SC)" [ref=e2466]:
+                      - link "Tadikonda (SC)" [ref=e2467] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e2468]:
+                      - link "56" [ref=e2469] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2470]:
+                      - img [ref=e2471]:
+                        - generic [ref=e2474]: "86"
+                    - cell "A" [ref=e2475]
+                  - row "90 GUNTUR Tenali 61 A" [ref=e2476]:
+                    - cell "90" [ref=e2477]
+                    - cell "GUNTUR" [ref=e2478]
+                    - cell "Tenali" [ref=e2479]:
+                      - link "Tenali" [ref=e2480] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e2481]:
+                      - link "61" [ref=e2482] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2483]:
+                      - img [ref=e2484]:
+                        - generic [ref=e2487]: "87"
+                    - cell "A" [ref=e2488]
+                  - row "91 BAPATLA Bapatla 59 A" [ref=e2489]:
+                    - cell "91" [ref=e2490]
+                    - cell "BAPATLA" [ref=e2491]
+                    - cell "Bapatla" [ref=e2492]:
+                      - link "Bapatla" [ref=e2493] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e2494]:
+                      - link "59" [ref=e2495] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2496]:
+                      - img [ref=e2497]:
+                        - generic [ref=e2500]: "85"
+                    - cell "A" [ref=e2501]
+                  - row "92 BAPATLA Chirala 58 A" [ref=e2502]:
+                    - cell "92" [ref=e2503]
+                    - cell "BAPATLA" [ref=e2504]
+                    - cell "Chirala" [ref=e2505]:
+                      - link "Chirala" [ref=e2506] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e2507]:
+                      - link "58" [ref=e2508] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2509]:
+                      - img [ref=e2510]:
+                        - generic [ref=e2513]: "85"
+                    - cell "A" [ref=e2514]
+                  - row "93 BAPATLA Parchur 57 A" [ref=e2515]:
+                    - cell "93" [ref=e2516]
+                    - cell "BAPATLA" [ref=e2517]
+                    - cell "Parchur" [ref=e2518]:
+                      - link "Parchur" [ref=e2519] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "57" [ref=e2520]:
+                      - link "57" [ref=e2521] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2522]:
+                      - img [ref=e2523]:
+                        - generic [ref=e2526]: "81"
+                    - cell "A" [ref=e2527]
+                  - row "94 BAPATLA Repalle 61 A" [ref=e2528]:
+                    - cell "94" [ref=e2529]
+                    - cell "BAPATLA" [ref=e2530]
+                    - cell "Repalle" [ref=e2531]:
+                      - link "Repalle" [ref=e2532] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e2533]:
+                      - link "61" [ref=e2534] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2535]:
+                      - img [ref=e2536]:
+                        - generic [ref=e2539]: "85"
+                    - cell "A" [ref=e2540]
+                  - row "95 BAPATLA Vemuru (SC) 56 A" [ref=e2541]:
+                    - cell "95" [ref=e2542]
+                    - cell "BAPATLA" [ref=e2543]
+                    - cell "Vemuru (SC)" [ref=e2544]:
+                      - link "Vemuru (SC)" [ref=e2545] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e2546]:
+                      - link "56" [ref=e2547] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2548]:
+                      - img [ref=e2549]:
+                        - generic [ref=e2552]: "87"
+                    - cell "A" [ref=e2553]
+                  - row "96 PALNADU Chilakaluripet 63 A" [ref=e2554]:
+                    - cell "96" [ref=e2555]
+                    - cell "PALNADU" [ref=e2556]
+                    - cell "Chilakaluripet" [ref=e2557]:
+                      - link "Chilakaluripet" [ref=e2558] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "63" [ref=e2559]:
+                      - link "63" [ref=e2560] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2561]:
+                      - img [ref=e2562]:
+                        - generic [ref=e2565]: "80"
+                    - cell "A" [ref=e2566]
+                  - row "97 PALNADU Gurajala 61 A" [ref=e2567]:
+                    - cell "97" [ref=e2568]
+                    - cell "PALNADU" [ref=e2569]
+                    - cell "Gurajala" [ref=e2570]:
+                      - link "Gurajala" [ref=e2571] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e2572]:
+                      - link "61" [ref=e2573] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2574]:
+                      - img [ref=e2575]:
+                        - generic [ref=e2578]: "77"
+                    - cell "A" [ref=e2579]
+                  - row "98 PALNADU Macherla 61 A" [ref=e2580]:
+                    - cell "98" [ref=e2581]
+                    - cell "PALNADU" [ref=e2582]
+                    - cell "Macherla" [ref=e2583]:
+                      - link "Macherla" [ref=e2584] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e2585]:
+                      - link "61" [ref=e2586] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2587]:
+                      - img [ref=e2588]:
+                        - generic [ref=e2591]: "76"
+                    - cell "A" [ref=e2592]
+                  - row "99 PALNADU Narasaraopet 61 A" [ref=e2593]:
+                    - cell "99" [ref=e2594]
+                    - cell "PALNADU" [ref=e2595]
+                    - cell "Narasaraopet" [ref=e2596]:
+                      - link "Narasaraopet" [ref=e2597] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e2598]:
+                      - link "61" [ref=e2599] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2600]:
+                      - img [ref=e2601]:
+                        - generic [ref=e2604]: "81"
+                    - cell "A" [ref=e2605]
+                  - row "100 PALNADU Pedakurapadu 55 A" [ref=e2606]:
+                    - cell "100" [ref=e2607]
+                    - cell "PALNADU" [ref=e2608]
+                    - cell "Pedakurapadu" [ref=e2609]:
+                      - link "Pedakurapadu" [ref=e2610] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e2611]:
+                      - link "55" [ref=e2612] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2613]:
+                      - img [ref=e2614]:
+                        - generic [ref=e2617]: "78"
+                    - cell "A" [ref=e2618]
+                  - row "101 PALNADU Sattenapalle 60 A" [ref=e2619]:
+                    - cell "101" [ref=e2620]
+                    - cell "PALNADU" [ref=e2621]
+                    - cell "Sattenapalle" [ref=e2622]:
+                      - link "Sattenapalle" [ref=e2623] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "60" [ref=e2624]:
+                      - link "60" [ref=e2625] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2626]:
+                      - img [ref=e2627]:
+                        - generic [ref=e2630]: "78"
+                    - cell "A" [ref=e2631]
+                  - row "102 PALNADU Vinukonda 61 A" [ref=e2632]:
+                    - cell "102" [ref=e2633]
+                    - cell "PALNADU" [ref=e2634]
+                    - cell "Vinukonda" [ref=e2635]:
+                      - link "Vinukonda" [ref=e2636] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e2637]:
+                      - link "61" [ref=e2638] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2639]:
+                      - img [ref=e2640]:
+                        - generic [ref=e2643]: "79"
+                    - cell "A" [ref=e2644]
+                  - row "103 PRAKASAM Addanki 59 A" [ref=e2645]:
+                    - cell "103" [ref=e2646]
+                    - cell "PRAKASAM" [ref=e2647]
+                    - cell "Addanki" [ref=e2648]:
+                      - link "Addanki" [ref=e2649] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e2650]:
+                      - link "59" [ref=e2651] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2652]:
+                      - img [ref=e2653]:
+                        - generic [ref=e2656]: "78"
+                    - cell "A" [ref=e2657]
+                  - row "104 PRAKASAM Darsi 59 A" [ref=e2658]:
+                    - cell "104" [ref=e2659]
+                    - cell "PRAKASAM" [ref=e2660]
+                    - cell "Darsi" [ref=e2661]:
+                      - link "Darsi" [ref=e2662] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e2663]:
+                      - link "59" [ref=e2664] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2665]:
+                      - img [ref=e2666]:
+                        - generic [ref=e2669]: "80"
+                    - cell "A" [ref=e2670]
+                  - row "105 PRAKASAM Kandukur 59 A" [ref=e2671]:
+                    - cell "105" [ref=e2672]
+                    - cell "PRAKASAM" [ref=e2673]
+                    - cell "Kandukur" [ref=e2674]:
+                      - link "Kandukur" [ref=e2675] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e2676]:
+                      - link "59" [ref=e2677] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2678]:
+                      - img [ref=e2679]:
+                        - generic [ref=e2682]: "84"
+                    - cell "A" [ref=e2683]
+                  - row "106 PRAKASAM Kondapi (SC) 52 A" [ref=e2684]:
+                    - cell "106" [ref=e2685]
+                    - cell "PRAKASAM" [ref=e2686]
+                    - cell "Kondapi (SC)" [ref=e2687]:
+                      - link "Kondapi (SC)" [ref=e2688] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "52" [ref=e2689]:
+                      - link "52" [ref=e2690] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2691]:
+                      - img [ref=e2692]:
+                        - generic [ref=e2695]: "83"
+                    - cell "A" [ref=e2696]
+                  - row "107 PRAKASAM Ongole 57 A" [ref=e2697]:
+                    - cell "107" [ref=e2698]
+                    - cell "PRAKASAM" [ref=e2699]
+                    - cell "Ongole" [ref=e2700]:
+                      - link "Ongole" [ref=e2701] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "57" [ref=e2702]:
+                      - link "57" [ref=e2703] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2704]:
+                      - img [ref=e2705]:
+                        - generic [ref=e2708]: "81"
+                    - cell "A" [ref=e2709]
+                  - row "108 PRAKASAM Santhanuthalapadu (SC) 59 A" [ref=e2710]:
+                    - cell "108" [ref=e2711]
+                    - cell "PRAKASAM" [ref=e2712]
+                    - cell "Santhanuthalapadu (SC)" [ref=e2713]:
+                      - link "Santhanuthalapadu (SC)" [ref=e2714] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e2715]:
+                      - link "59" [ref=e2716] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2717]:
+                      - img [ref=e2718]:
+                        - generic [ref=e2721]: "83"
+                    - cell "A" [ref=e2722]
+                  - row "109 SRI POTTI SRIRAMULU NELLORE Atmakur 62 A" [ref=e2723]:
+                    - cell "109" [ref=e2724]
+                    - cell "SRI POTTI SRIRAMULU NELLORE" [ref=e2725]
+                    - cell "Atmakur" [ref=e2726]:
+                      - link "Atmakur" [ref=e2727] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e2728]:
+                      - link "62" [ref=e2729] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2730]:
+                      - img [ref=e2731]:
+                        - generic [ref=e2734]: "80"
+                    - cell "A" [ref=e2735]
+                  - row "110 SRI POTTI SRIRAMULU NELLORE Gudur (SC) 64 A" [ref=e2736]:
+                    - cell "110" [ref=e2737]
+                    - cell "SRI POTTI SRIRAMULU NELLORE" [ref=e2738]
+                    - cell "Gudur (SC)" [ref=e2739]:
+                      - link "Gudur (SC)" [ref=e2740] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "64" [ref=e2741]:
+                      - link "64" [ref=e2742] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2743]:
+                      - img [ref=e2744]:
+                        - generic [ref=e2747]: "84"
+                    - cell "A" [ref=e2748]
+                  - row "111 SRI POTTI SRIRAMULU NELLORE Kavali 64 A" [ref=e2749]:
+                    - cell "111" [ref=e2750]
+                    - cell "SRI POTTI SRIRAMULU NELLORE" [ref=e2751]
+                    - cell "Kavali" [ref=e2752]:
+                      - link "Kavali" [ref=e2753] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "64" [ref=e2754]:
+                      - link "64" [ref=e2755] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2756]:
+                      - img [ref=e2757]:
+                        - generic [ref=e2760]: "80"
+                    - cell "A" [ref=e2761]
+                  - row "112 SRI POTTI SRIRAMULU NELLORE Kovur 62 A" [ref=e2762]:
+                    - cell "112" [ref=e2763]
+                    - cell "SRI POTTI SRIRAMULU NELLORE" [ref=e2764]
+                    - cell "Kovur" [ref=e2765]:
+                      - link "Kovur" [ref=e2766] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e2767]:
+                      - link "62" [ref=e2768] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2769]:
+                      - img [ref=e2770]:
+                        - generic [ref=e2773]: "78"
+                    - cell "A" [ref=e2774]
+                  - row "113 SRI POTTI SRIRAMULU NELLORE Nellore City 43 A" [ref=e2775]:
+                    - cell "113" [ref=e2776]
+                    - cell "SRI POTTI SRIRAMULU NELLORE" [ref=e2777]
+                    - cell "Nellore City" [ref=e2778]:
+                      - link "Nellore City" [ref=e2779] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "43" [ref=e2780]:
+                      - link "43" [ref=e2781] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2782]:
+                      - img [ref=e2783]:
+                        - generic [ref=e2786]: "81"
+                    - cell "A" [ref=e2787]
+                  - row "114 SRI POTTI SRIRAMULU NELLORE Nellore Rural 54 B" [ref=e2788]:
+                    - cell "114" [ref=e2789]
+                    - cell "SRI POTTI SRIRAMULU NELLORE" [ref=e2790]
+                    - cell "Nellore Rural" [ref=e2791]:
+                      - link "Nellore Rural" [ref=e2792] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "54" [ref=e2793]:
+                      - link "54" [ref=e2794] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2795]:
+                      - img [ref=e2796]:
+                        - generic [ref=e2799]: "74"
+                    - cell "B" [ref=e2800]
+                  - row "115 SRI POTTI SRIRAMULU NELLORE Sarvepalli 58 A" [ref=e2801]:
+                    - cell "115" [ref=e2802]
+                    - cell "SRI POTTI SRIRAMULU NELLORE" [ref=e2803]
+                    - cell "Sarvepalli" [ref=e2804]:
+                      - link "Sarvepalli" [ref=e2805] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e2806]:
+                      - link "58" [ref=e2807] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2808]:
+                      - img [ref=e2809]:
+                        - generic [ref=e2812]: "75"
+                    - cell "A" [ref=e2813]
+                  - row "116 SRI POTTI SRIRAMULU NELLORE Udayagiri 58 A" [ref=e2814]:
+                    - cell "116" [ref=e2815]
+                    - cell "SRI POTTI SRIRAMULU NELLORE" [ref=e2816]
+                    - cell "Udayagiri" [ref=e2817]:
+                      - link "Udayagiri" [ref=e2818] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e2819]:
+                      - link "58" [ref=e2820] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2821]:
+                      - img [ref=e2822]:
+                        - generic [ref=e2825]: "82"
+                    - cell "A" [ref=e2826]
+                  - row "117 SRI POTTI SRIRAMULU NELLORE Venkatagiri 64 A" [ref=e2827]:
+                    - cell "117" [ref=e2828]
+                    - cell "SRI POTTI SRIRAMULU NELLORE" [ref=e2829]
+                    - cell "Venkatagiri" [ref=e2830]:
+                      - link "Venkatagiri" [ref=e2831] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "64" [ref=e2832]:
+                      - link "64" [ref=e2833] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2834]:
+                      - img [ref=e2835]:
+                        - generic [ref=e2838]: "80"
+                    - cell "A" [ref=e2839]
+                  - row "118 KURNOOL Adoni 62 A" [ref=e2840]:
+                    - cell "118" [ref=e2841]
+                    - cell "KURNOOL" [ref=e2842]
+                    - cell "Adoni" [ref=e2843]:
+                      - link "Adoni" [ref=e2844] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e2845]:
+                      - link "62" [ref=e2846] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2847]:
+                      - img [ref=e2848]:
+                        - generic [ref=e2851]: "81"
+                    - cell "A" [ref=e2852]
+                  - row "119 KURNOOL Alur 56 A" [ref=e2853]:
+                    - cell "119" [ref=e2854]
+                    - cell "KURNOOL" [ref=e2855]
+                    - cell "Alur" [ref=e2856]:
+                      - link "Alur" [ref=e2857] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e2858]:
+                      - link "56" [ref=e2859] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2860]:
+                      - img [ref=e2861]:
+                        - generic [ref=e2864]: "77"
+                    - cell "A" [ref=e2865]
+                  - row "120 KURNOOL Kodumur (SC) 58 A" [ref=e2866]:
+                    - cell "120" [ref=e2867]
+                    - cell "KURNOOL" [ref=e2868]
+                    - cell "Kodumur (SC)" [ref=e2869]:
+                      - link "Kodumur (SC)" [ref=e2870] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e2871]:
+                      - link "58" [ref=e2872] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2873]:
+                      - img [ref=e2874]:
+                        - generic [ref=e2877]: "78"
+                    - cell "A" [ref=e2878]
+                  - row "121 KURNOOL Kurnool 46 A" [ref=e2879]:
+                    - cell "121" [ref=e2880]
+                    - cell "KURNOOL" [ref=e2881]
+                    - cell "Kurnool" [ref=e2882]:
+                      - link "Kurnool" [ref=e2883] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "46" [ref=e2884]:
+                      - link "46" [ref=e2885] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2886]:
+                      - img [ref=e2887]:
+                        - generic [ref=e2890]: "82"
+                    - cell "A" [ref=e2891]
+                  - row "122 KURNOOL Mantralayam 56 A" [ref=e2892]:
+                    - cell "122" [ref=e2893]
+                    - cell "KURNOOL" [ref=e2894]
+                    - cell "Mantralayam" [ref=e2895]:
+                      - link "Mantralayam" [ref=e2896] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e2897]:
+                      - link "56" [ref=e2898] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2899]:
+                      - img [ref=e2900]:
+                        - generic [ref=e2903]: "78"
+                    - cell "A" [ref=e2904]
+                  - row "123 KURNOOL Panyam 61 A" [ref=e2905]:
+                    - cell "123" [ref=e2906]
+                    - cell "KURNOOL" [ref=e2907]
+                    - cell "Panyam" [ref=e2908]:
+                      - link "Panyam" [ref=e2909] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e2910]:
+                      - link "61" [ref=e2911] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2912]:
+                      - img [ref=e2913]:
+                        - generic [ref=e2916]: "77"
+                    - cell "A" [ref=e2917]
+                  - row "124 KURNOOL Pattikonda 56 A" [ref=e2918]:
+                    - cell "124" [ref=e2919]
+                    - cell "KURNOOL" [ref=e2920]
+                    - cell "Pattikonda" [ref=e2921]:
+                      - link "Pattikonda" [ref=e2922] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e2923]:
+                      - link "56" [ref=e2924] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2925]:
+                      - img [ref=e2926]:
+                        - generic [ref=e2929]: "77"
+                    - cell "A" [ref=e2930]
+                  - row "125 KURNOOL Yemmiganur 60 A" [ref=e2931]:
+                    - cell "125" [ref=e2932]
+                    - cell "KURNOOL" [ref=e2933]
+                    - cell "Yemmiganur" [ref=e2934]:
+                      - link "Yemmiganur" [ref=e2935] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "60" [ref=e2936]:
+                      - link "60" [ref=e2937] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2938]:
+                      - img [ref=e2939]:
+                        - generic [ref=e2942]: "79"
+                    - cell "A" [ref=e2943]
+                  - row "126 NANDYAL Allagadda 62 A" [ref=e2944]:
+                    - cell "126" [ref=e2945]
+                    - cell "NANDYAL" [ref=e2946]
+                    - cell "Allagadda" [ref=e2947]:
+                      - link "Allagadda" [ref=e2948] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e2949]:
+                      - link "62" [ref=e2950] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2951]:
+                      - img [ref=e2952]:
+                        - generic [ref=e2955]: "76"
+                    - cell "A" [ref=e2956]
+                  - row "127 NANDYAL Banaganapalle 57 B" [ref=e2957]:
+                    - cell "127" [ref=e2958]
+                    - cell "NANDYAL" [ref=e2959]
+                    - cell "Banaganapalle" [ref=e2960]:
+                      - link "Banaganapalle" [ref=e2961] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "57" [ref=e2962]:
+                      - link "57" [ref=e2963] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2964]:
+                      - img [ref=e2965]:
+                        - generic [ref=e2968]: "74"
+                    - cell "B" [ref=e2969]
+                  - row "128 NANDYAL Dhone 60 A" [ref=e2970]:
+                    - cell "128" [ref=e2971]
+                    - cell "NANDYAL" [ref=e2972]
+                    - cell "Dhone" [ref=e2973]:
+                      - link "Dhone" [ref=e2974] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "60" [ref=e2975]:
+                      - link "60" [ref=e2976] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2977]:
+                      - img [ref=e2978]:
+                        - generic [ref=e2981]: "81"
+                    - cell "A" [ref=e2982]
+                  - row "129 NANDYAL Nandikotkur (SC) 61 B" [ref=e2983]:
+                    - cell "129" [ref=e2984]
+                    - cell "NANDYAL" [ref=e2985]
+                    - cell "Nandikotkur (SC)" [ref=e2986]:
+                      - link "Nandikotkur (SC)" [ref=e2987] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e2988]:
+                      - link "61" [ref=e2989] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e2990]:
+                      - img [ref=e2991]:
+                        - generic [ref=e2994]: "74"
+                    - cell "B" [ref=e2995]
+                  - row "130 NANDYAL Nandyal 62 B" [ref=e2996]:
+                    - cell "130" [ref=e2997]
+                    - cell "NANDYAL" [ref=e2998]
+                    - cell "Nandyal" [ref=e2999]:
+                      - link "Nandyal" [ref=e3000] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e3001]:
+                      - link "62" [ref=e3002] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3003]:
+                      - img [ref=e3004]:
+                        - generic [ref=e3007]: "73"
+                    - cell "B" [ref=e3008]
+                  - row "131 NANDYAL Srisailam 57 B" [ref=e3009]:
+                    - cell "131" [ref=e3010]
+                    - cell "NANDYAL" [ref=e3011]
+                    - cell "Srisailam" [ref=e3012]:
+                      - link "Srisailam" [ref=e3013] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "57" [ref=e3014]:
+                      - link "57" [ref=e3015] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3016]:
+                      - img [ref=e3017]:
+                        - generic [ref=e3020]: "71"
+                    - cell "B" [ref=e3021]
+                  - row "132 ANANTHAPURAMU Anantapur Urban 46 B" [ref=e3022]:
+                    - cell "132" [ref=e3023]
+                    - cell "ANANTHAPURAMU" [ref=e3024]
+                    - cell "Anantapur Urban" [ref=e3025]:
+                      - link "Anantapur Urban" [ref=e3026] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "46" [ref=e3027]:
+                      - link "46" [ref=e3028] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3029]:
+                      - img [ref=e3030]:
+                        - generic [ref=e3033]: "69"
+                    - cell "B" [ref=e3034]
+                  - row "133 ANANTHAPURAMU Guntakal 61 B" [ref=e3035]:
+                    - cell "133" [ref=e3036]
+                    - cell "ANANTHAPURAMU" [ref=e3037]
+                    - cell "Guntakal" [ref=e3038]:
+                      - link "Guntakal" [ref=e3039] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e3040]:
+                      - link "61" [ref=e3041] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3042]:
+                      - img [ref=e3043]:
+                        - generic [ref=e3046]: "69"
+                    - cell "B" [ref=e3047]
+                  - row "134 ANANTHAPURAMU Kalyandurg 59 B" [ref=e3048]:
+                    - cell "134" [ref=e3049]
+                    - cell "ANANTHAPURAMU" [ref=e3050]
+                    - cell "Kalyandurg" [ref=e3051]:
+                      - link "Kalyandurg" [ref=e3052] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e3053]:
+                      - link "59" [ref=e3054] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3055]:
+                      - img [ref=e3056]:
+                        - generic [ref=e3059]: "73"
+                    - cell "B" [ref=e3060]
+                  - row "135 ANANTHAPURAMU Rapthadu 56 B" [ref=e3061]:
+                    - cell "135" [ref=e3062]
+                    - cell "ANANTHAPURAMU" [ref=e3063]
+                    - cell "Rapthadu" [ref=e3064]:
+                      - link "Rapthadu" [ref=e3065] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e3066]:
+                      - link "56" [ref=e3067] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3068]:
+                      - img [ref=e3069]:
+                        - generic [ref=e3072]: "74"
+                    - cell "B" [ref=e3073]
+                  - row "136 ANANTHAPURAMU Rayadurg 61 B" [ref=e3074]:
+                    - cell "136" [ref=e3075]
+                    - cell "ANANTHAPURAMU" [ref=e3076]
+                    - cell "Rayadurg" [ref=e3077]:
+                      - link "Rayadurg" [ref=e3078] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e3079]:
+                      - link "61" [ref=e3080] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3081]:
+                      - img [ref=e3082]:
+                        - generic [ref=e3085]: "72"
+                    - cell "B" [ref=e3086]
+                  - row "137 ANANTHAPURAMU Singanamala (SC) 56 A" [ref=e3087]:
+                    - cell "137" [ref=e3088]
+                    - cell "ANANTHAPURAMU" [ref=e3089]
+                    - cell "Singanamala (SC)" [ref=e3090]:
+                      - link "Singanamala (SC)" [ref=e3091] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e3092]:
+                      - link "56" [ref=e3093] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3094]:
+                      - img [ref=e3095]:
+                        - generic [ref=e3098]: "75"
+                    - cell "A" [ref=e3099]
+                  - row "138 ANANTHAPURAMU Tadpatri 61 B" [ref=e3100]:
+                    - cell "138" [ref=e3101]
+                    - cell "ANANTHAPURAMU" [ref=e3102]
+                    - cell "Tadpatri" [ref=e3103]:
+                      - link "Tadpatri" [ref=e3104] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e3105]:
+                      - link "61" [ref=e3106] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3107]:
+                      - img [ref=e3108]:
+                        - generic [ref=e3111]: "73"
+                    - cell "B" [ref=e3112]
+                  - row "139 ANANTHAPURAMU Uravakonda 56 B" [ref=e3113]:
+                    - cell "139" [ref=e3114]
+                    - cell "ANANTHAPURAMU" [ref=e3115]
+                    - cell "Uravakonda" [ref=e3116]:
+                      - link "Uravakonda" [ref=e3117] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e3118]:
+                      - link "56" [ref=e3119] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3120]:
+                      - img [ref=e3121]:
+                        - generic [ref=e3124]: "69"
+                    - cell "B" [ref=e3125]
+                  - row "140 SRI SATHYASAI Dharmavaram 59 A" [ref=e3126]:
+                    - cell "140" [ref=e3127]
+                    - cell "SRI SATHYASAI" [ref=e3128]
+                    - cell "Dharmavaram" [ref=e3129]:
+                      - link "Dharmavaram" [ref=e3130] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e3131]:
+                      - link "59" [ref=e3132] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3133]:
+                      - img [ref=e3134]:
+                        - generic [ref=e3137]: "83"
+                    - cell "A" [ref=e3138]
+                  - row "141 SRI SATHYASAI Hindupur 60 A" [ref=e3139]:
+                    - cell "141" [ref=e3140]
+                    - cell "SRI SATHYASAI" [ref=e3141]
+                    - cell "Hindupur" [ref=e3142]:
+                      - link "Hindupur" [ref=e3143] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "60" [ref=e3144]:
+                      - link "60" [ref=e3145] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3146]:
+                      - img [ref=e3147]:
+                        - generic [ref=e3150]: "81"
+                    - cell "A" [ref=e3151]
+                  - row "142 SRI SATHYASAI Kadiri 61 A" [ref=e3152]:
+                    - cell "142" [ref=e3153]
+                    - cell "SRI SATHYASAI" [ref=e3154]
+                    - cell "Kadiri" [ref=e3155]:
+                      - link "Kadiri" [ref=e3156] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e3157]:
+                      - link "61" [ref=e3158] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3159]:
+                      - img [ref=e3160]:
+                        - generic [ref=e3163]: "83"
+                    - cell "A" [ref=e3164]
+                  - row "143 SRI SATHYASAI Madakasira (SC) 59 A" [ref=e3165]:
+                    - cell "143" [ref=e3166]
+                    - cell "SRI SATHYASAI" [ref=e3167]
+                    - cell "Madakasira (SC)" [ref=e3168]:
+                      - link "Madakasira (SC)" [ref=e3169] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e3170]:
+                      - link "59" [ref=e3171] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3172]:
+                      - img [ref=e3173]:
+                        - generic [ref=e3176]: "82"
+                    - cell "A" [ref=e3177]
+                  - row "144 SRI SATHYASAI Penukonda 59 A" [ref=e3178]:
+                    - cell "144" [ref=e3179]
+                    - cell "SRI SATHYASAI" [ref=e3180]
+                    - cell "Penukonda" [ref=e3181]:
+                      - link "Penukonda" [ref=e3182] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e3183]:
+                      - link "59" [ref=e3184] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3185]:
+                      - img [ref=e3186]:
+                        - generic [ref=e3189]: "81"
+                    - cell "A" [ref=e3190]
+                  - row "145 SRI SATHYASAI Puttaparthi 61 A" [ref=e3191]:
+                    - cell "145" [ref=e3192]
+                    - cell "SRI SATHYASAI" [ref=e3193]
+                    - cell "Puttaparthi" [ref=e3194]:
+                      - link "Puttaparthi" [ref=e3195] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e3196]:
+                      - link "61" [ref=e3197] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3198]:
+                      - img [ref=e3199]:
+                        - generic [ref=e3202]: "81"
+                    - cell "A" [ref=e3203]
+                  - row "146 Y.S.R. KADAPA Badvel (SC) 59 A" [ref=e3204]:
+                    - cell "146" [ref=e3205]
+                    - cell "Y.S.R. KADAPA" [ref=e3206]
+                    - cell "Badvel (SC)" [ref=e3207]:
+                      - link "Badvel (SC)" [ref=e3208] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e3209]:
+                      - link "59" [ref=e3210] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3211]:
+                      - img [ref=e3212]:
+                        - generic [ref=e3215]: "75"
+                    - cell "A" [ref=e3216]
+                  - row "147 Y.S.R. KADAPA Jammalamadugu 60 A" [ref=e3217]:
+                    - cell "147" [ref=e3218]
+                    - cell "Y.S.R. KADAPA" [ref=e3219]
+                    - cell "Jammalamadugu" [ref=e3220]:
+                      - link "Jammalamadugu" [ref=e3221] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "60" [ref=e3222]:
+                      - link "60" [ref=e3223] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3224]:
+                      - img [ref=e3225]:
+                        - generic [ref=e3228]: "79"
+                    - cell "A" [ref=e3229]
+                  - row "148 Y.S.R. KADAPA Kadapa 53 A" [ref=e3230]:
+                    - cell "148" [ref=e3231]
+                    - cell "Y.S.R. KADAPA" [ref=e3232]
+                    - cell "Kadapa" [ref=e3233]:
+                      - link "Kadapa" [ref=e3234] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "53" [ref=e3235]:
+                      - link "53" [ref=e3236] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3237]:
+                      - img [ref=e3238]:
+                        - generic [ref=e3241]: "79"
+                    - cell "A" [ref=e3242]
+                  - row "149 Y.S.R. KADAPA Kamalapuram 59 A" [ref=e3243]:
+                    - cell "149" [ref=e3244]
+                    - cell "Y.S.R. KADAPA" [ref=e3245]
+                    - cell "Kamalapuram" [ref=e3246]:
+                      - link "Kamalapuram" [ref=e3247] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e3248]:
+                      - link "59" [ref=e3249] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3250]:
+                      - img [ref=e3251]:
+                        - generic [ref=e3254]: "75"
+                    - cell "A" [ref=e3255]
+                  - row "150 Y.S.R. KADAPA Mydukur 60 A" [ref=e3256]:
+                    - cell "150" [ref=e3257]
+                    - cell "Y.S.R. KADAPA" [ref=e3258]
+                    - cell "Mydukur" [ref=e3259]:
+                      - link "Mydukur" [ref=e3260] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "60" [ref=e3261]:
+                      - link "60" [ref=e3262] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3263]:
+                      - img [ref=e3264]:
+                        - generic [ref=e3267]: "76"
+                    - cell "A" [ref=e3268]
+                  - row "151 Y.S.R. KADAPA Proddatur 58 B" [ref=e3269]:
+                    - cell "151" [ref=e3270]
+                    - cell "Y.S.R. KADAPA" [ref=e3271]
+                    - cell "Proddatur" [ref=e3272]:
+                      - link "Proddatur" [ref=e3273] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e3274]:
+                      - link "58" [ref=e3275] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3276]:
+                      - img [ref=e3277]:
+                        - generic [ref=e3280]: "74"
+                    - cell "B" [ref=e3281]
+                  - row "152 Y.S.R. KADAPA Pulivendla 62 A" [ref=e3282]:
+                    - cell "152" [ref=e3283]
+                    - cell "Y.S.R. KADAPA" [ref=e3284]
+                    - cell "Pulivendla" [ref=e3285]:
+                      - link "Pulivendla" [ref=e3286] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "62" [ref=e3287]:
+                      - link "62" [ref=e3288] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3289]:
+                      - img [ref=e3290]:
+                        - generic [ref=e3293]: "79"
+                    - cell "A" [ref=e3294]
+                  - row "153 Y.S.R. KADAPA Rajampet 58 A" [ref=e3295]:
+                    - cell "153" [ref=e3296]
+                    - cell "Y.S.R. KADAPA" [ref=e3297]
+                    - cell "Rajampet" [ref=e3298]:
+                      - link "Rajampet" [ref=e3299] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e3300]:
+                      - link "58" [ref=e3301] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3302]:
+                      - img [ref=e3303]:
+                        - generic [ref=e3306]: "76"
+                    - cell "A" [ref=e3307]
+                  - row "154 ANNAMAYYA Madanapalle 60 A" [ref=e3308]:
+                    - cell "154" [ref=e3309]
+                    - cell "ANNAMAYYA" [ref=e3310]
+                    - cell "Madanapalle" [ref=e3311]:
+                      - link "Madanapalle" [ref=e3312] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "60" [ref=e3313]:
+                      - link "60" [ref=e3314] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3315]:
+                      - img [ref=e3316]:
+                        - generic [ref=e3319]: "84"
+                    - cell "A" [ref=e3320]
+                  - row "155 ANNAMAYYA Pileru 55 A" [ref=e3321]:
+                    - cell "155" [ref=e3322]
+                    - cell "ANNAMAYYA" [ref=e3323]
+                    - cell "Pileru" [ref=e3324]:
+                      - link "Pileru" [ref=e3325] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e3326]:
+                      - link "55" [ref=e3327] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3328]:
+                      - img [ref=e3329]:
+                        - generic [ref=e3332]: "83"
+                    - cell "A" [ref=e3333]
+                  - row "156 ANNAMAYYA Punganur 59 A" [ref=e3334]:
+                    - cell "156" [ref=e3335]
+                    - cell "ANNAMAYYA" [ref=e3336]
+                    - cell "Punganur" [ref=e3337]:
+                      - link "Punganur" [ref=e3338] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e3339]:
+                      - link "59" [ref=e3340] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3341]:
+                      - img [ref=e3342]:
+                        - generic [ref=e3345]: "84"
+                    - cell "A" [ref=e3346]
+                  - row "157 ANNAMAYYA Rayachoti 57 A" [ref=e3347]:
+                    - cell "157" [ref=e3348]
+                    - cell "ANNAMAYYA" [ref=e3349]
+                    - cell "Rayachoti" [ref=e3350]:
+                      - link "Rayachoti" [ref=e3351] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "57" [ref=e3352]:
+                      - link "57" [ref=e3353] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3354]:
+                      - img [ref=e3355]:
+                        - generic [ref=e3358]: "83"
+                    - cell "A" [ref=e3359]
+                  - row "158 ANNAMAYYA Thamballapalle 58 A" [ref=e3360]:
+                    - cell "158" [ref=e3361]
+                    - cell "ANNAMAYYA" [ref=e3362]
+                    - cell "Thamballapalle" [ref=e3363]:
+                      - link "Thamballapalle" [ref=e3364] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e3365]:
+                      - link "58" [ref=e3366] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3367]:
+                      - img [ref=e3368]:
+                        - generic [ref=e3371]: "85"
+                    - cell "A" [ref=e3372]
+                  - row "159 CHITTOOR Chittoor 58 A" [ref=e3373]:
+                    - cell "159" [ref=e3374]
+                    - cell "CHITTOOR" [ref=e3375]
+                    - cell "Chittoor" [ref=e3376]:
+                      - link "Chittoor" [ref=e3377] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e3378]:
+                      - link "58" [ref=e3379] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3380]:
+                      - img [ref=e3381]:
+                        - generic [ref=e3384]: "78"
+                    - cell "A" [ref=e3385]
+                  - row "160 CHITTOOR Gangadhara Nellore (SC) 55 A" [ref=e3386]:
+                    - cell "160" [ref=e3387]
+                    - cell "CHITTOOR" [ref=e3388]
+                    - cell "Gangadhara Nellore (SC)" [ref=e3389]:
+                      - link "Gangadhara Nellore (SC)" [ref=e3390] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e3391]:
+                      - link "55" [ref=e3392] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3393]:
+                      - img [ref=e3394]:
+                        - generic [ref=e3397]: "75"
+                    - cell "A" [ref=e3398]
+                  - row "161 CHITTOOR Kuppam 60 A" [ref=e3399]:
+                    - cell "161" [ref=e3400]
+                    - cell "CHITTOOR" [ref=e3401]
+                    - cell "Kuppam" [ref=e3402]:
+                      - link "Kuppam" [ref=e3403] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "60" [ref=e3404]:
+                      - link "60" [ref=e3405] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3406]:
+                      - img [ref=e3407]:
+                        - generic [ref=e3410]: "79"
+                    - cell "A" [ref=e3411]
+                  - row "162 CHITTOOR Nagari 63 B" [ref=e3412]:
+                    - cell "162" [ref=e3413]
+                    - cell "CHITTOOR" [ref=e3414]
+                    - cell "Nagari" [ref=e3415]:
+                      - link "Nagari" [ref=e3416] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "63" [ref=e3417]:
+                      - link "63" [ref=e3418] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3419]:
+                      - img [ref=e3420]:
+                        - generic [ref=e3423]: "73"
+                    - cell "B" [ref=e3424]
+                  - row "163 CHITTOOR Palamaner 58 A" [ref=e3425]:
+                    - cell "163" [ref=e3426]
+                    - cell "CHITTOOR" [ref=e3427]
+                    - cell "Palamaner" [ref=e3428]:
+                      - link "Palamaner" [ref=e3429] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e3430]:
+                      - link "58" [ref=e3431] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3432]:
+                      - img [ref=e3433]:
+                        - generic [ref=e3436]: "82"
+                    - cell "A" [ref=e3437]
+                  - row "164 CHITTOOR Puthalapattu (SC) 54 A" [ref=e3438]:
+                    - cell "164" [ref=e3439]
+                    - cell "CHITTOOR" [ref=e3440]
+                    - cell "Puthalapattu (SC)" [ref=e3441]:
+                      - link "Puthalapattu (SC)" [ref=e3442] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "54" [ref=e3443]:
+                      - link "54" [ref=e3444] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3445]:
+                      - img [ref=e3446]:
+                        - generic [ref=e3449]: "82"
+                    - cell "A" [ref=e3450]
+                  - row "165 TIRUPATI Chandragiri 57 A" [ref=e3451]:
+                    - cell "165" [ref=e3452]
+                    - cell "TIRUPATI" [ref=e3453]
+                    - cell "Chandragiri" [ref=e3454]:
+                      - link "Chandragiri" [ref=e3455] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "57" [ref=e3456]:
+                      - link "57" [ref=e3457] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3458]:
+                      - img [ref=e3459]:
+                        - generic [ref=e3462]: "87"
+                    - cell "A" [ref=e3463]
+                  - row "166 TIRUPATI Kodur (SC) 56 A" [ref=e3464]:
+                    - cell "166" [ref=e3465]
+                    - cell "TIRUPATI" [ref=e3466]
+                    - cell "Kodur (SC)" [ref=e3467]:
+                      - link "Kodur (SC)" [ref=e3468] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "56" [ref=e3469]:
+                      - link "56" [ref=e3470] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3471]:
+                      - img [ref=e3472]:
+                        - generic [ref=e3475]: "88"
+                    - cell "A" [ref=e3476]
+                  - row "167 TIRUPATI Satyavedu (SC) 57 A+" [ref=e3477]:
+                    - cell "167" [ref=e3478]
+                    - cell "TIRUPATI" [ref=e3479]
+                    - cell "Satyavedu (SC)" [ref=e3480]:
+                      - link "Satyavedu (SC)" [ref=e3481] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "57" [ref=e3482]:
+                      - link "57" [ref=e3483] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3484]:
+                      - img [ref=e3485]:
+                        - generic [ref=e3488]: "91"
+                    - cell "A+" [ref=e3489]
+                  - row "168 TIRUPATI Srikalahasti 61 A" [ref=e3490]:
+                    - cell "168" [ref=e3491]
+                    - cell "TIRUPATI" [ref=e3492]
+                    - cell "Srikalahasti" [ref=e3493]:
+                      - link "Srikalahasti" [ref=e3494] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e3495]:
+                      - link "61" [ref=e3496] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3497]:
+                      - img [ref=e3498]:
+                        - generic [ref=e3501]: "84"
+                    - cell "A" [ref=e3502]
+                  - row "169 TIRUPATI Sullurpeta (SC) 61 A" [ref=e3503]:
+                    - cell "169" [ref=e3504]
+                    - cell "TIRUPATI" [ref=e3505]
+                    - cell "Sullurpeta (SC)" [ref=e3506]:
+                      - link "Sullurpeta (SC)" [ref=e3507] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "61" [ref=e3508]:
+                      - link "61" [ref=e3509] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3510]:
+                      - img [ref=e3511]:
+                        - generic [ref=e3514]: "78"
+                    - cell "A" [ref=e3515]
+                  - row "170 TIRUPATI Tirupati 46 A" [ref=e3516]:
+                    - cell "170" [ref=e3517]
+                    - cell "TIRUPATI" [ref=e3518]
+                    - cell "Tirupati" [ref=e3519]:
+                      - link "Tirupati" [ref=e3520] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "46" [ref=e3521]:
+                      - link "46" [ref=e3522] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3523]:
+                      - img [ref=e3524]:
+                        - generic [ref=e3527]: "84"
+                    - cell "A" [ref=e3528]
+                  - row "171 POLAVARAM Rampachodavaram (ST) 55 A" [ref=e3529]:
+                    - cell "171" [ref=e3530]
+                    - cell "POLAVARAM" [ref=e3531]
+                    - cell "Rampachodavaram (ST)" [ref=e3532]:
+                      - link "Rampachodavaram (ST)" [ref=e3533] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "55" [ref=e3534]:
+                      - link "55" [ref=e3535] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3536]:
+                      - img [ref=e3537]:
+                        - generic [ref=e3540]: "78"
+                    - cell "A" [ref=e3541]
+                  - row "172 MARKAPURAM Giddalur 59 A" [ref=e3542]:
+                    - cell "172" [ref=e3543]
+                    - cell "MARKAPURAM" [ref=e3544]
+                    - cell "Giddalur" [ref=e3545]:
+                      - link "Giddalur" [ref=e3546] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "59" [ref=e3547]:
+                      - link "59" [ref=e3548] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3549]:
+                      - img [ref=e3550]:
+                        - generic [ref=e3553]: "77"
+                    - cell "A" [ref=e3554]
+                  - row "173 MARKAPURAM Kanigiri 58 A" [ref=e3555]:
+                    - cell "173" [ref=e3556]
+                    - cell "MARKAPURAM" [ref=e3557]
+                    - cell "Kanigiri" [ref=e3558]:
+                      - link "Kanigiri" [ref=e3559] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e3560]:
+                      - link "58" [ref=e3561] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3562]:
+                      - img [ref=e3563]:
+                        - generic [ref=e3566]: "84"
+                    - cell "A" [ref=e3567]
+                  - row "174 MARKAPURAM Markapuram 58 A" [ref=e3568]:
+                    - cell "174" [ref=e3569]
+                    - cell "MARKAPURAM" [ref=e3570]
+                    - cell "Markapuram" [ref=e3571]:
+                      - link "Markapuram" [ref=e3572] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "58" [ref=e3573]:
+                      - link "58" [ref=e3574] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3575]:
+                      - img [ref=e3576]:
+                        - generic [ref=e3579]: "84"
+                    - cell "A" [ref=e3580]
+                  - row "175 MARKAPURAM Yerragondapalem (SC) 52 A" [ref=e3581]:
+                    - cell "175" [ref=e3582]
+                    - cell "MARKAPURAM" [ref=e3583]
+                    - cell "Yerragondapalem (SC)" [ref=e3584]:
+                      - link "Yerragondapalem (SC)" [ref=e3585] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell "52" [ref=e3586]:
+                      - link "52" [ref=e3587] [cursor=pointer]:
+                        - /url: /scoresdashboard
+                    - cell [ref=e3588]:
+                      - img [ref=e3589]:
+                        - generic [ref=e3592]: "84"
+                    - cell "A" [ref=e3593]
+      - alert [ref=e3594]:
+        - strong [ref=e3595]: "Disclaimer:"
+        - text: This report was generated based on the data available in the portal on
+        - strong [ref=e3596]: 07/08/26 at 08:46:12.
+  - generic [ref=e3597]: 91%
+```
+
+# Test source
+
+```ts
+  1   | 
+  2   | import { test, expect } from '../../src/fixtures/pagefixtures'
+  3   | import * as allure from "allure-js-commons";
+  4   | 
+  5   | test.beforeEach(async ({ loginPage, homePage, swaKpisHomePage, page }) => {
+  6   |     await loginPage.goToLoginPage();
+  7   |     await loginPage.closeThanksPopup();
+  8   |     await loginPage.clickLoginArrow();
+  9   |     await loginPage.doLogin(process.env.USERNAME_ADMIN!, process.env.PASSWORD!, process.env.CAPTCHA!);
+  10  |     await homePage.ClickSwaKpisBtn();
+  11  |     await swaKpisHomePage.clickDashboardBtn();
+  12  | 
+  13  | })
+  14  | 
+  15  | test.only('Verify key performance dashboard constituency stats scores with main scores', async ({ swaKpisHomePage, performanceDashboardPage }) => {
+  16  |     test.setTimeout(840000)
+  17  | 
+  18  |     await allure.displayName("Performance Dashboard - Constituency Score Validation");
+  19  |     await allure.description("Validates that Constituency main scores match indicator averages");
+  20  |     await allure.owner("Pavan Kumar Talari");
+  21  |     await allure.severity("critical");
+  22  |     await allure.feature("Performance Dashboard");
+  23  |     await allure.tags("Regression");
+  24  | 
+  25  |     await swaKpisHomePage.clickPerformanceDashboardLink();
+  26  |     await performanceDashboardPage.staticwait(4000);
+  27  | 
+  28  |     await performanceDashboardPage.clickConstituencyStatsLink();
+  29  |     let expected = await performanceDashboardPage.getScoreValuesMap('Constituency Name');
+  30  |     let actual = await performanceDashboardPage.ClickNoofIndicatorsLinksAndStoreAvgscores();
+  31  | 
+  32  |     for (const [constituency, mainScore] of expected) {
+  33  |         const averageScore = actual.get(constituency);
+  34  |         expect.soft(averageScore, `Average score should be defined for Constituency: ${constituency}`).toBeDefined();
+> 35  |         expect.soft(mainScore, `Score for Constituency "${constituency}": Expected ${mainScore}, Got ${averageScore}`).toBe(averageScore);
+      |                                                                                                                        ^ Error: Score for Constituency "Palasa": Expected 72, Got 71
+  36  |     }
+  37  | })
+  38  | 
+  39  | test('Verify SDG performance dashboard constituency stats scores with main scores', async ({ swaKpisHomePage, performanceDashboardPage }) => {
+  40  |     test.setTimeout(840000)
+  41  |     await allure.displayName("SDG Performance Dashboard - Constituency Score Validation");
+  42  |     await allure.description("Validates that Constituency main scores match indicator averages");
+  43  |     await allure.owner("Pavan Kumar Talari");
+  44  |     await allure.severity("critical");
+  45  |     await allure.feature("SDG Performance Dashboard");
+  46  |     await allure.tags("Regression");
+  47  | 
+  48  |     await swaKpisHomePage.clickSDGPerformanceDashboardLink();
+  49  |     await performanceDashboardPage.staticwait(4000);
+  50  | 
+  51  |     await performanceDashboardPage.clickConstituencyStatsLink();
+  52  |     let expected = await performanceDashboardPage.getScoreValuesMap('Constituency Name');
+  53  |     let actual = await performanceDashboardPage.ClickNoofIndicatorsLinksAndStoreAvgscores();
+  54  | 
+  55  |     for (const [constituency, mainScore] of expected) {
+  56  |         const averageScore = actual.get(constituency);
+  57  |         expect.soft(averageScore, `Average score should be defined for Constituency: ${constituency}`).toBeDefined();
+  58  |         expect.soft(mainScore, `Score for Constituency "${constituency}": Expected ${mainScore}, Got ${averageScore}`).toBe(averageScore);
+  59  |     }
+  60  | })
+  61  | 
+  62  | test('Verify Economic performance dashboard constituency stats scores with main scores', async ({ swaKpisHomePage, performanceDashboardPage }) => {
+  63  |     test.setTimeout(840000)
+  64  |     await allure.displayName("Economic Performance Dashboard - Constituency Score Validation");
+  65  |     await allure.description("Validates that Constituency main scores match indicator averages");
+  66  |     await allure.owner("Pavan Kumar Talari");
+  67  |     await allure.severity("critical");
+  68  |     await allure.feature("Economic Performance Dashboard");
+  69  |     await allure.tags("Regression");
+  70  | 
+  71  |     await swaKpisHomePage.clickEconomicPerformanceDashboardLink();
+  72  |     await performanceDashboardPage.staticwait(4000);
+  73  | 
+  74  |     await performanceDashboardPage.clickConstituencyStatsLink();
+  75  |     let expected = await performanceDashboardPage.getScoreValuesMap('Constituency Name');
+  76  |     let actual = await performanceDashboardPage.ClickNoofIndicatorsLinksAndStoreAvgscores();
+  77  | 
+  78  |     for (const [constituency, mainScore] of expected) {
+  79  |         const averageScore = actual.get(constituency);
+  80  |         expect.soft(averageScore, `Average score should be defined for Constituency: ${constituency}`).toBeDefined();
+  81  |         expect.soft(mainScore, `Score for Constituency "${constituency}": Expected ${mainScore}, Got ${averageScore}`).toBe(averageScore);
+  82  |     }
+  83  | })
+  84  | 
+  85  | test('Verify key performance dashboard mandal stats scores with main scores', async ({ swaKpisHomePage, performanceDashboardPage }) => {
+  86  |     test.setTimeout(3360000)
+  87  |     await allure.displayName("Performance Dashboard - Mandal Score Validation");
+  88  |     await allure.description("Validates that Mandal main scores match indicator averages");
+  89  |     await allure.owner("Pavan Kumar Talari");
+  90  |     await allure.severity("critical");
+  91  |     await allure.feature("Performance Dashboard");
+  92  |     await allure.tags("Regression");
+  93  | 
+  94  |     await swaKpisHomePage.clickPerformanceDashboardLink();
+  95  |     await performanceDashboardPage.staticwait(4000);
+  96  | 
+  97  |     await performanceDashboardPage.clickMandalStatsLink();
+  98  |     let expected = await performanceDashboardPage.getScoreValuesMap('Mandal Name');
+  99  |     let actual = await performanceDashboardPage.ClickNoofIndicatorsLinksAndStoreAvgscores();
+  100 | 
+  101 |     for (const [mandal, mainScore] of expected) {
+  102 |         const averageScore = actual.get(mandal);
+  103 |         expect.soft(averageScore, `Average score should be defined for Mandal: ${mandal}`).toBeDefined();
+  104 |         expect.soft(mainScore, `Score for Mandal "${mandal}": Expected ${mainScore}, Got ${averageScore}`).toBe(averageScore);
+  105 |     }
+  106 | })
+  107 | 
+  108 | test('Verify SDG performance dashboard mandal stats scores with main scores', async ({ swaKpisHomePage, performanceDashboardPage }) => {
+  109 |     test.setTimeout(3360000)
+  110 |     await allure.displayName("SDG Performance Dashboard - Mandal Score Validation");
+  111 |     await allure.description("Validates that Mandal main scores match indicator averages");
+  112 |     await allure.owner("Pavan Kumar Talari");
+  113 |     await allure.severity("critical");
+  114 |     await allure.feature("SDG Performance Dashboard");
+  115 |     await allure.tags("Regression");
+  116 | 
+  117 |     await swaKpisHomePage.clickSDGPerformanceDashboardLink();
+  118 |     await performanceDashboardPage.staticwait(4000);
+  119 | 
+  120 |     await performanceDashboardPage.clickMandalStatsLink();
+  121 |     let expected = await performanceDashboardPage.getScoreValuesMap('Mandal Name');
+  122 |     let actual = await performanceDashboardPage.ClickNoofIndicatorsLinksAndStoreAvgscores();
+  123 | 
+  124 |     for (const [mandal, mainScore] of expected) {
+  125 |         const averageScore = actual.get(mandal);
+  126 |         expect.soft(averageScore, `Average score should be defined for Mandal: ${mandal}`).toBeDefined();
+  127 |         expect.soft(mainScore, `Score for Mandal "${mandal}": Expected ${mainScore}, Got ${averageScore}`).toBe(averageScore);
+  128 |     }
+  129 | })
+  130 | 
+  131 | test('Verify Ecomic performance dashboard mandal stats scores with main scores', async ({ swaKpisHomePage, performanceDashboardPage }) => {
+  132 |     test.setTimeout(3360000)
+  133 |     await allure.displayName("Economic Performance Dashboard - Mandal Score Validation");
+  134 |     await allure.description("Validates that Mandal main scores match indicator averages");
+  135 |     await allure.owner("Pavan Kumar Talari");
+```

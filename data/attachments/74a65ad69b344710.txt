@@ -1,0 +1,16 @@
+user creds: cfss_admin : ASR@@!%
+Main Table Scores: Map(5) {
+  'Amadalavalasa' => 81,
+  'Etcherla' => 83,
+  'Ichchapuram' => 74,
+  'Narasannapeta' => 79,
+  'Palasa' => 72
+}
+index is  4
+Average Scores:  Map(5) {
+  'Amadalavalasa' => 80,
+  'Etcherla' => 82,
+  'Ichchapuram' => 73,
+  'Narasannapeta' => 78,
+  'Palasa' => 71
+}
