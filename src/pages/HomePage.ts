@@ -38,7 +38,7 @@ export class HomePage extends BasePage {
 
 
     async doLogout(): Promise<void> {
-        allure.step('Loggin out of the application', async () => {
+        await allure.step('Logout of the application', async () => {
             await this.logoutBtn.waitFor({ state: 'visible', timeout: 5000 });
             await this.logoutBtn.click();
 

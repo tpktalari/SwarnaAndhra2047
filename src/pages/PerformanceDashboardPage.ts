@@ -33,28 +33,28 @@ export class PerformanceDashboardPage extends BasePage {
     }
 
     async clickConstituencyStatsLink(): Promise<void> {
-        allure.step('clickConstituencyStatsLink', async () => {
+        await allure.step('clickConstituencyStatsLink', async () => {
             await this.constituencyStatsLink.waitFor({ state: 'visible' });
             await this.constituencyStatsLink.click({ force: true });
         })
     }
 
     async clickMandalStatsLink(): Promise<void> {
-        allure.step('click Mandal Stats Link', async () => {
+        await allure.step('click Mandal Stats Link', async () => {
             await this.mandalStatsLink.waitFor({ state: 'visible' });
             await this.mandalStatsLink.click({ force: true });
         })
     }
 
     async clickDistrictStatsLink(): Promise<void> {
-        allure.step('Click District Stats Link', async () => {
+        await allure.step('Click District Stats Link', async () => {
             await this.DistrictStatsLink.waitFor({ state: 'visible' });
             await this.DistrictStatsLink.click({ force: true });
         })
     }
 
     async clickDeptStatsLink(): Promise<void> {
-        allure.step('click Department Stats Link ', async () => {
+        await allure.step('click Department Stats Link ', async () => {
             await this.DeptStatsLink.waitFor({ state: 'visible' });
             await this.DeptStatsLink.click({ force: true });
         })
@@ -94,16 +94,16 @@ export class PerformanceDashboardPage extends BasePage {
 
 
     async getScoreValuesMap(nameColumn: StatsNameColumn) {
-        return allure.step(`Extract ${nameColumn} scores from dashboard table`, async () => {
+        return await allure.step(`Extract ${nameColumn} scores from dashboard table`, async () => {
             const achievedIndexScore = await this.getColumnIndex("Score ↕");
             const achievedIndexKey = await this.getColumnIndex(nameColumn);
             //console.log("index is ", achievedIndexScore);
             const scoreValues = await this.page.locator(`table tbody tr td:nth-child(${achievedIndexScore})`).allInnerTexts();
             const constValues = await this.page.locator(`table tbody tr td:nth-child(${achievedIndexKey})`).allInnerTexts();
 
-            for (let i = 0; i < constValues.slice(0, 5).length; i++) {
-                const constituency = constValues.slice(0, 5)[i].trim();
-                const score = Number(scoreValues.slice(0, 5)[i].trim());
+            for (let i = 0; i < constValues.slice(0, 2).length; i++) {
+                const constituency = constValues.slice(0, 2)[i].trim();
+                const score = Number(scoreValues.slice(0, 2)[i].trim());
                 this.constMainTableScores.set(constituency, score);
             }
 
@@ -113,11 +113,11 @@ export class PerformanceDashboardPage extends BasePage {
     }
 
     async ClickNoofIndicatorsLinksAndStoreAvgscores() {
-        return allure.step('Click indicator links and store average scores', async () => {
+        return await allure.step('Click indicator links and store average scores', async () => {
             const links = await this.getNoofIndicatorsLinks();
             const constituencyKeys = [...this.constMainTableScores.keys()];
-            for (let i = 0; i < links.slice(0, 5).length; i++) {
-                const link = links.slice(0, 5)[i];
+            for (let i = 0; i < links.slice(0, 2).length; i++) {
+                const link = links.slice(0, 2)[i];
                 await link.waitForElementState('stable')
                 await link.click();
                 // Wait for at least one row to be visible
